@@ -1,540 +1,540 @@
-// Kitab At-Tahara (الطهارة) - La Pureté
+// كِتَاب الطَّهَارَة (Kitab At-Tahara) - La Pureté
 
 const KITAB_TAHARA = {
     id: "tahara",
-    name: "Kitab At-Tahara (الطهارة)",
+    name: "كِتَاب الطَّهَارَة",
     description: "La Pureté - Ablution, ghusl et comportements",
     icon: "💧",
     portes: [
         {
             id: "tahara-eau",
-            name: "L'eau (الماء) et ses types",
-            description: "Classification de l'eau: tahour, tahir, najis",
+            name: "الْمَاء وَأَنْوَاعُهُ",
+            description: "Classification de l'eau: طَهُور, طَاهِر, نَجِس",
             notes: [
                 {
                     id: "note-1",
-                    title: "Types d'eau purifiant",
+                    title: "أَنْوَاع الْمَاء الطَّاهِر",
                     date: "2026-02-28",
                     author: "Sacha",
-                    tags: ["eau", "tahour", "tahir", "najis"],
-                    content: `# Types d'eau purifiant
+                    tags: ["ماء", "طهور", "طاهر", "نجس"],
+                    content: `# أَنْوَاع الْمَاء الطَّاهِر
 
-## L'eau pure et purifiante (الماء الطهور)
-L'eau qui n'a pas changé en couleur, goût ou odeur à cause de quelque chose d'impur.
+## الْمَاء الطَّاهِر الطَّهُور
+الْمَاء الَّذِي لَمْ يَتَغَيَّر بِلَوْنٍ أَوْ طَعْمٍ أَوْ رَائِحَة بِسَبَب شَيْء نَجِس.
 
-### Caractéristiques:
-- L'eau du ciel garde sa nature d'eau pure
-- Avec elle on peut se purifier
-- Même si des choses (ex: algues) altèrent légèrement le goût/odeur/couleur
+### الخصائص:
+- ماء السماء يحافظ على طهوريته
+- به يمكن التطهر والتنظيف
+- حتى لو تغير طعم أو رائحة قليلاً بأشياء طاهرة
 
-## L'eau pure mais non-purifiante (طاهر)
-L'eau mélangée avec quelque chose de propre qui change sa nature.
+## الْمَاء الطَّاهِر غَيْر الطَّهُور (الطَّاهِر)
+الْمَاء الْمَخْلُوط بِشَيْء طَاهِر يُغَيِّر طَبِيعَته.
 
-### Exemples:
-- Café, thé, jus
-- Se consomme mais ne purifie pas
+### الْأَمْثِلَة:
+- قَهْوَة، شَاي، عَصِير
+- يُشْرَب لَكِن لا يُطَهِّر
 
-## L'eau impure (نجس)
-L'eau mélangée à une impureté.
+## الْمَاء النَّجِس
+الْمَاء الْمَخْلُوط بِشَيْء نَجِس.
 
-### Condition:
-- Au moins UN des 3 attributs est altéré:
-  1. L'odeur
-  2. Le goût
-  3. L'apparence/couleur
+### الشَّرْط:
+- يَجِب تَغَيُّر أَحَد الثَّلاثَة:
+  1. الرَّائِحَة
+  2. الطَّعْم
+  3. اللَّوْن
 
-## Classification rapide
-- **Transformation (الاستحالة)** → Parle du moment où l'eau impure devient pure
-- **Changement (التغيير)** → L'eau change de nature
-- **Distinction (الفرق)** → La différence entre types d'eau`
+## تَصْنِيف سَرِيع
+- **الاسْتِحَالَة** → تَحَوُّل الْمَاء النَّجِس إِلَى طَاهِر
+- **التَّغَيُّر** → تَغَيُّر طَبِيعَة الْمَاء
+- **الفَرْق** → الْفَرْق بَيْن أَنْوَاع الْمَاء`
                 }
             ]
         },
         {
             id: "tahara-recipients",
-            name: "Les récipients (الآنية)",
-            description: "Récipients autorisés et interdits",
+            name: "الآنِيَة (الأَوعِيَة)",
+            description: "أَوْعِيَة مَحْظُورَة وَمُبَاحَة",
             notes: [
                 {
                     id: "note-3",
-                    title: "Les récipients en or, argent et autres matériaux",
+                    title: "الآنِيَة مِن الذَّهَب وَالْفِضَّة",
                     date: "2026-03-01",
                     author: "Sacha",
-                    tags: ["récipients", "or", "argent", "interdit"],
-                    content: `# Les récipients (الآنية)
+                    tags: ["آنية", "ذهب", "فضة", "حرام"],
+                    content: `# الآنِيَة
 
-## Récipients interdits
-Les récipients en **or** et **argent** sont **interdits** d'utilisation.
+## الآنِيَة الْمَحْظُورَة
+الآنِيَة مِن الذَّهَب وَالْفِضَّة **حَرَام** اسْتِعْمَالُهَا.
 
-### Raison:
-- Orgueil, luxe, ostentation
-- Éloignement de la modestie
+### السَّبَب:
+- الغُرُور وَالتَّرَف
+- الْبُعْد عَن التَّوَاضُع
 
-## Récipients permis
-- Tous les autres matériaux
-- Récipients des non-musulmans (permis sauf si utilisés pour l'impur)
+## الآنِيَة الْمُبَاحَة
+- جَمِيع الْمَوَاد الْأُخْرَى
+- آنِيَة غَيْر الْمُسْلِمِين (مَبَاحَة إِلا إِذَا اسْتُعِمِلَت لِلنَّجَاسَة)
 
-## Matériaux purs après tannage (الدباغة)
-### Les peaux d'animaux:
-- Peau de tous les animaux → **pure après tannage**
-- Sauf: **chien** et **porc** (restent impurs même tannés)
+## الْجُلُود الْمَدْبُوغَة
+### جُلُود الْحَيَوَانَات:
+- جَمِيع جُلُود الْحَيَوَانَات → **طَاهِرَة بَعْد الدِّبَاغَة**
+- إِلا: **الْكَلْب** وَالْخِنْزِير (تَبْقَى نَجِسَة)
 
-## Os, cornes, poils, plumes:
-- **Pure (طاهرة)** après l'abattage rituel
-- Peuvent être utilisés`
+## الْعِظَام وَالْقُرُون وَالشُّعُور وَالرِّيش:
+- **طَاهِرَة** بَعْد الذَّبْح الشَّرْعِي
+- يَجُوز اسْتِعْمَالُهَا`
                 }
             ]
         },
         {
             id: "tahara-besoins",
-            name: "Les besoins naturels",
-            description: "Règles des toilettes, endroits autorisés et interdits",
+            name: "الْحَاجَة (قَضَاء الْحَاجَة)",
+            description: "أَحْكَام الْخَلاء وَالتَّطَهُّر",
             notes: [
                 {
                     id: "note-4",
-                    title: "Le Guss (toilettes) - Ce qui est interdit",
+                    title: "أَحْكَام قَضَاء الْحَاجَة",
                     date: "2026-03-01",
                     author: "Sacha",
-                    tags: ["toilettes", "interdit", "makruh"],
-                    content: `# Le Guss (الغسل) - Les besoins naturels
+                    tags: ["حاجة", "حرام", "مكروه", "مستحب"],
+                    content: `# أَحْكَام قَضَاء الْحَاجَة
 
-## Ce qui est INTERDIT (حرام):
-1. Faire face à la Qibla (القبلة)
-2. Dans l'eau stagnante (piscine, lac)
-3. Dans les mosquées
-4. Se nettoyer avec os/plumes/nourriture
+## الْمَحْظُورَات (الحَرَام):
+1. اسْتِقْبَال الْقِبْلَة
+2. فِي الْمَاء الرَّاكِد
+3. فِي الْمَسَاجِد
+4. الاسْتِنْجَاء بِالْعِظَام أَوْ الرِّيش أَوْ الطَّعَام
 
-## Ce qui est DÉCONSEILLÉ (مكروه - Makruh):
-1. Parler pendant les besoins
-2. Uriner face au vent
-3. Apporter quelque chose avec le nom d'Allah
-4. Se nettoyer avec la main droite
-5. Excéder le temps passé
+## الْمَكْرُوهَات:
+1. الْكَلام أَثْنَاء قَضَاء الْحَاجَة
+2. اسْتِقْبَال الرِّيح وَالتَّبَوُّل فِيهَا
+3. حَمْل مَا فِيه اسْم اللَّه
+4. الاسْتِنْجَاء بِالْيَد الْيُمْنَى
+5. إِطَالَة الْمُكْث
 
-## Ce qui est RECOMMANDÉ (مستحب - Mustahab):
-1. Dire "Bismillah" en entrant aux toilettes
-2. Entrer du pied gauche
-3. Sortir du pied droit
-4. Dire "Ghoufranak" (pardon) à Allah`
+## الْمُسْتَحَبَّات:
+1. قَوْل "بِسْم اللَّه" عِنْد الدُّخُول
+2. الدُّخُول بِالرِّجْل الْيُسْرَى
+3. الْخُرُوج بِالرِّجْل الْيُمْنَى
+4. قَوْل "غُفْرَانَك" (الاسْتِغْفَار)`
                 }
             ]
         },
         {
             id: "tahara-siwak",
-            name: "Siwak (السواك) - Le brossage des dents",
-            description: "L'objet et les moments recommandés",
+            name: "السِّوَاك (تَنْظِيف الْأَسْنَان)",
+            description: "الْأَدَاة وَالْأَوْقَات الْمُسْتَحَبَّة",
             notes: [
                 {
                     id: "note-6",
-                    title: "Siwak et ses moments recommandés",
+                    title: "السِّوَاك وَأَوْقَاتُهُ",
                     date: "2026-03-01",
                     author: "Sacha",
-                    tags: ["siwak", "dents", "hygiène", "sunna"],
-                    content: `# Siwak (السواك) - Le brossage des dents
+                    tags: ["سواك", "أسنان", "نظافة", "سنة"],
+                    content: `# السِّوَاك
 
-## Définition:
-- **Siwak (السواك)** = L'action du brossage
-- **Misswak (المسواك)** = L'objet utilisé (bâton)
+## التَّعْرِيف:
+- **السِّوَاك** = فِعْل التَّنْظِيف
+- **الْمِسْوَاك** = الأَدَاة (الْعِصَا)
 
-## Moments recommandés (مستحب - Mustahhab):
-1. **Pendant l'ablution (الوضوء)**
-2. **Avant la prière (الصلاة)**
-3. **Au réveil**
-4. **Pour lire le Coran (القرآن)**
-5. **En rentrant chez soi**
-6. **Quand une odeur sort de la bouche**
+## الْأَوْقَات الْمُسْتَحَبَّة:
+1. **أَثْنَاء الْوُضُوء**
+2. **قَبْل الصَّلاة**
+3. **عِنْد الاسْتِيقَاظ**
+4. **لِقِرَاءَة الْقُرْآن**
+5. **عِنْد الدُّخُول إِلَى الْبَيْت**
+6. **عِنْدَ خُرُوج الرَّائِحَة الْكَرِيهَة**
 
-## Promesse du Prophète:
-Si on applique ces conseils = **jamais de caries**
+## وَعْد النَّبِيّ:
+إِذَا حَافَظْتَ عَلَى هَذِهِ الْأَوْقَات = **لا تَتَسَوَّس الْأَسْنَان**
 
-## Impact:
-- Hygiène bucco-dentaire optimale
-- Sunnah (سنة) fortement encouragée`
+## الْفَائِدَة:
+- نَظَافَة فَمِ وَأَسْنَان مِثَالِيَّة
+- سُنَّة مُؤَكَّدَة`
                 }
             ]
         },
         {
             id: "tahara-wudhu",
-            name: "L'ablution (الوضوء)",
-            description: "Conditions, obligations et sunnahs du wudhu",
+            name: "الْوُضُوء",
+            description: "الشُّرُوط وَالْفَرَائِض وَالسُّنَن",
             notes: [
                 {
                     id: "note-7",
-                    title: "Al-Wudhu: Conditions, Farads et Sunan",
+                    title: "الْوُضُوء: الشُّرُوط وَالْفَرَائِض وَالسُّنَن",
                     date: "2026-03-01",
                     author: "Sacha",
-                    tags: ["wudhu", "ablutions", "fard", "condition"],
-                    content: `# L'ablution (الوضوء)
+                    tags: ["وضوء", "شرط", "فرض", "سنة"],
+                    content: `# الْوُضُوء
 
-## Terminologie Juridique:
+## الْمُصْطَلَحَات الشَّرْعِيَّة:
 
-### Shart (الشرط) - Condition:
-- Récompense si tu fais ✓
-- Pas de péché si condition naturelle
+### الشَّرْط:
+- ثَوَاب إِذَا فَعَلْتَ
+- لا إِثْم إِذَا لَم تَسْتَطِع
 
-### Fard (الفرض) - Obligation:
-- Péché si tu ne fais pas ✗
+### الْفَرْض:
+- إِثْم إِذَا تَرَكْتَ
 
-### Wajib (الواجب) - Obligatoire:
-- Quand il y a peu de dalil (preuve)
+### الْوَاجِب:
+- عِنْدَ قِلَّة الدَّلِيل
 
-### Mustahab (المستحب) - Recommandé:
-- Tu fais bien, pas de péché si tu ne fais pas
+### الْمُسْتَحَبّ:
+- فِعْل حَسَن لا إِثْم إِذَا تَرَكْتَ
 
-### Mubah (المباح) - Permis:
-- Récompense si bonne intention = habitude
+### الْمُبَاح:
+- ثَوَاب بِالنِّيَّة الصَّالِحَة
 
-### Haram (الحرام) - Interdit
-### Makrouh (المكروه) - Détesté
-
----
-
-## Les FARD (الفرائض) du Wudhu:
-1. Rincer la bouche et aspirer avec le nez
-2. Passer sur les cheveux
-3. Faire masah (المسح) sur les oreilles
-4. Laver les mains puis les pieds jusqu'au coude
-5. **Suivre l'ordre (الترتيب - Tartib)** - IMPORTANT
-6. **Ne pas faire de pause** - c'est Fard
+### الْحَرَام
+### الْمَكْرُوه
 
 ---
 
-## Les SHART (الشروط) du Wudhu:
-1. Se débarrasser de ce qui annule l'ablution
-2. Être musulman
-3. Avoir l'intention (النية - Niyyah) - Malik dit que c'est automatique
-4. Être conscient (positif)
-5. Avoir toutes ses facultés mentales
-6. Eau pure et purifiante (الماء الطهور)
-7. Retirer tout ce qui empêche l'eau d'atteindre la peau
-   - Bagues, vernis, plâtre, etc.`
+## فَرَائِض الْوُضُوء:
+1. الْمَضْمَضَة وَالاسْتِنْشَاق
+2. الْمَسْح عَلَى الرَّأْس
+3. الْمَسْح عَلَى الأُذُنَيْن
+4. غَسْل الْيَدَيْن وَالرِّجْلَيْن إِلَى الْمِرْفَقَيْن
+5. **الْمُحَافَظَة عَلَى التَّرْتِيب**
+6. **عَدَم الْفِصْل (عَدَم الْفَتْرَة الطَّويِلَة)**
+
+---
+
+## شُرُوط الْوُضُوء:
+1. التَّخَلُّص مِمَّا يَنْقُضُ الْوُضُوء
+2. الْإِسْلام
+3. النِّيَّة (الْمَالِكِيَّة تَقُول إِنَّهَا تُشْتَرَط)
+4. الْعَقْل
+5. التَّمْيِيز
+6. مَاء طَهُور
+7. إِزَالَة مَا يَمْنَع وُصُول الْمَاء
+   - الْخَوَاتِيم، طَلاء الأَظْفَار، الْجِبْس، إِلَخ`
                 }
             ]
         },
         {
             id: "tahara-khuffayn",
-            name: "Masah (المسح) sur Khuffayn (الخفين)",
-            description: "Passer les mains sur les chaussettes en cuir",
+            name: "الْمَسْح عَلَى الْخُفَّيْن",
+            description: "مَسْح الْجَوَارِب الْجِلْدِيَّة",
             notes: [
                 {
                     id: "note-8",
-                    title: "Masah sur les chaussettes en cuir (Khuffayn)",
+                    title: "الْمَسْح عَلَى الْخُفَّيْن",
                     date: "2026-03-01",
                     author: "Sacha",
-                    tags: ["khuffayn", "chaussettes", "masah"],
-                    content: `# Masah (المسح) sur Khuffayn (الخفين)
+                    tags: ["خفين", "جوارب", "مسح"],
+                    content: `# الْمَسْح عَلَى الْخُفَّيْن
 
-## 3 CONDITIONS pour faire Masah:
-1. **Porter immédiatement après ablutions complètes**
-   - ⚠️ PAS accepté si Tayammum (التيمم) ⚠️
+## ثَلاث شُرُوط:
+1. **لُبْسُهُمَا بَعْد طُهْر**
+   - ⚠️ لا يَجُوز إِذَا كَان بِتَيَمُّم ⚠️
 
-2. **Le Khuff doit couvrir**
-   - Toute la partie du pied
-   - Jusqu'aux chevilles
+2. **يَجِب أَن يَسْتُرَا**
+   - الْقَدَم كُلَّهَا
+   - إِلَى الْكَاحِلَيْن
 
-3. **Doit être pur**
-   - Pas sale
-   - Pas fabriqué en cuir de chien/porc
-
----
-
-## 3 ANNULATIONS du Masah (المبطلات):
-
-1. **Si Djanaba (جنابة)** (ce qui oblige le Ghusl)
-   - Perte de sperme = Ghusl (الغسل) obligatoire
-   - Masah invalide
-
-2. **Si la durée s'écoule (المدة)**
-   - Voyageur = 3 jours + 3 nuits (72h)
-   - Non-Voyageur = 1 jour + 1 nuit (24h)
-
-3. **Si tu retires ton Khuff**
-   - ⚠️ OBLIGÉ de refaire ablutions complètes ⚠️
+3. **يَجِب أَن يَكُونَا طَاهِرَيْن**
+   - نَظِيفَيْن
+   - لَيْس مِن جِلْد كَلْب أَوْ خِنْزِير
 
 ---
 
-## Décompte de la durée:
-- Début: dès le moment où on "perd" (annule) l'ablution
-- Exemple: Ablution Fajr → Port Khuff → Ablution Dhor → DÉBUT COMPTAGE
+## ثَلاث مُبْطِلَات:
 
-**Important:** Si avant la fin de la durée on a une djanaba = Ghusl obligatoire, masah annulé`
+1. **الْجَنَابَة** (وُجُوب الْغُسْل)
+   - خُرُوج الْمَنِيّ = غُسْل وَاجِب
+   - يُبْطِل الْمَسْح
+
+2. **انْقِضَاء الْمُدَّة**
+   - الْمُسَافِر = 3 أَيَّام وَ 3 لَيَال (72 سَاعَة)
+   - الْمُقِيم = يَوْم وَلَيْلَة (24 سَاعَة)
+
+3. **خَلْع الْخُفّ**
+   - ⚠️ وُجُوب إِعَادَة الْوُضُوء كَامِلاً ⚠️
+
+---
+
+## حِسَاب الْمُدَّة:
+- الْبِدَايَة: عِنْدَ أَوَّل نَاقِض بَعْد الْلُّبْس
+- مِثَال: وُضُوء الْفَجْر → لُبْس الْخُفّ → وُضُوء الظُّهْر → **بِدَايَة الْحِسَاب**
+
+**مِهَمّ:** إِذَا حَدَثَتْ جَنَابَة قَبْل انْقِضَاء الْمُدَّة = غُسْل وَاجِب، الْمَسْح بَاطِل`
                 }
             ]
         },
         {
             id: "tahara-annulation",
-            name: "Ce qui annule l'ablution (نواقض الوضوء)",
-            description: "Les choses qui invalident le wudhu",
+            name: "نَوَاقِض الْوُضُوء",
+            description: "مَا يُبْطِل الْوُضُوء",
             notes: [
                 {
                     id: "note-ce-qui-annule",
-                    title: "Ce qui annule l'ablution (Nawaqid Al-Wudhu)",
+                    title: "نَوَاقِض الْوُضُوء",
                     date: "2026-03-01",
                     author: "Sacha",
-                    tags: ["ablution", "annulation", "wudhu"],
-                    content: `# Ce qui annule l'ablution (نواقض الوضوء)
+                    tags: ["وضوء", "نواقض", "بطلان"],
+                    content: `# نَوَاقِض الْوُضُوء
 
-## Choses qui annulent l'ablution (الوضوء):
-1. Selles (البراز) - urine, selles
-2. Gaz (الريح) - pet
-3. Écoulement du sang en grande quantité
-4. Perte de conscience
-5. Sommeil profond
-6. Folie temporaire
-7. Relations conjugales (pénétration)
-8. Consommation d'aliments contenant une substance stupéfiante
+## مَا يُبْطِل الْوُضُوء:
+1. خُرُوج شَيْء مِن السَّبِيلَيْن (الْبَرَاز وَالْبَوْل)
+2. خُرُوج الرِّيح
+3. نُزُول الدَّم الْكَثِير
+4. فِقْدَان الْعَقْل
+5. النَّوْم الْعَمِيق
+6. الْجُنُون الْمُؤَقَّت
+7. الْجِمَاع
+8. تَنَاوُل مَادَّة مُسْكِرَة
 
-## Après annulation:
-- Impossible de faire la Prière (الصلاة)
-- Impossible de faire Tawaf (الطواف)
-- Impossible de toucher le Mushaf (المصحف)
-- Nécessité de refaire les ablutions complètes`
+## بَعْد الْبُطْلان:
+- لا يَجُوز الصَّلاة
+- لا يَجُوز الطَّوَاف
+- لا يَجُوز مَسّ الْمُصْحَف
+- وُجُوب إِعَادَة الْوُضُوء`
                 }
             ]
         },
         {
             id: "tahara-ghusl",
-            name: "Le Ghusl (الغسل) - Grandes ablutions",
-            description: "Les ablutions majeures et leurs conditions",
+            name: "الْغُسْل (الاغْتِسَال)",
+            description: "الْغُسْل الْوَاجِب وَشُرُوطُهُ",
             notes: [
                 {
                     id: "note-10",
-                    title: "Ghusl: 5 nécessités, 7 conditions, 1 obligation",
+                    title: "الْغُسْل: شُرُوطُهُ وَفَرَائِضُهُ",
                     date: "2026-03-01",
                     author: "Sacha",
-                    tags: ["ghusl", "janaba", "ablutions", "majeures"],
-                    content: `# Le Ghusl (الغسل) - Les grandes ablutions
+                    tags: ["غسل", "جنابة", "غسل واجب"],
+                    content: `# الْغُسْل
 
-## 5 CHOSES NÉCESSITANT le Ghusl (الوجوب):
+## خَمْس حَالات تَوْجِب الْغُسْل:
 
-1. **La sortie du sperme (الإنزال)**
-   - Éjaculation = Ghusl obligatoire
+1. **خُرُوج الْمَنِيّ**
+   - الإِنْزَال = غُسْل وَاجِب
 
-2. **Le rapport conjugal (الجماع)**
-   - Pénétration = Ghusl obligatoire
-   - ⚠️ MÊME SANS ÉJACULATION ⚠️
+2. **الْجِمَاع**
+   - الدُّخُول = غُسْل وَاجِب
+   - ⚠️ حَتَّى بِدُون إِنْزَال ⚠️
 
-3. **La sortie des menstrues (الحيض)**
-   - Fin de période menstruelle = Ghusl
+3. **انْقِطَاع حَيْض**
+   - نِهَايَة الْحَيْض = غُسْل وَاجِب
 
-4. **La sortie des lochies (النفاس)**
-   - Après l'accouchement = Ghusl
+4. **انْقِطَاع نِفَاس**
+   - بَعْد الْوِلاَدَة = غُسْل وَاجِب
 
-5. **En entrant dans l'Islam (الإسلام)**
-   - Conversion = Ghusl obligatoire
-
----
-
-## 7 CONDITIONS (الشروط) pour faire Ghusl:
-
-1. Se débarrasser de ce qui nécessite le ghusl
-2. Mettre l'intention (النية)
-3. Être musulman
-4. Avoir toutes ses facultés mentales
-5. Être conscient
-6. Utiliser eau Pure (ماء طهور)
-7. Retirer tout ce qui empêche l'eau d'atteindre la peau
+5. **الدُّخُول فِي الْإِسْلام**
+   - التَّشَهُّد = غُسْل وَاجِب
 
 ---
 
-## 1 SEULE OBLIGATION (الفرض):
-### Mouiller **TOUT** le corps (تعميم الماء)
-- Pas un cheveu qui reste sec
-- Chaque millimètre du corps
+## سَبْع شُرُوط:
+
+1. التَّخَلُّص مِمَّا يَوْجِب الْغُسْل
+2. النِّيَّة
+3. الْإِسْلام
+4. الْعَقْل
+5. التَّمْيِيز
+6. مَاء طَهُور
+7. إِزَالَة مَا يَمْنَع وُصُول الْمَاء
 
 ---
 
-## 7 SUNNAHS (السنن) (Recommandé):
-1. Laver d'abord la partie souillée
-2. Faire les ablutions complètes pendant le ghusl
-3. Mouiller 3 fois chaque membre
-4. Commencer par la droite, finir par la gauche
-5. Ne pas faire de pauses
-6. Frotter tous les membres
-7. Laver les pieds dans un autre endroit
+## فَرْض وَاحِد:
+### تَعْمِيم الْمَاء عَلَى الْجَسَد كُلِّه
+- لا يَبْقَى شَعْرَة إِلا وَصَلَ إِلَيْهَا الْمَاء
 
 ---
 
-## NOTE IMPORTANTE:
-**On peut prier après le Ghusl SANS refaire l'ablution (الوضوء)**
-- Le ghusl inclut les ablutions
-- Pas besoin de wudhu supplémentaire`
+## سَبْع سُنَن:
+1. غَسْل الْمَوْضِع الْمُتَّسِخ أَوَّلاً
+2. إِتْمَام الْوُضُوء أَثْنَاء الْغُسْل
+3. صَبّ الْمَاء ثَلاث مَرَّات عَلَى كُلِّ عُضْو
+4. الْبِدَايَة بِالْجَانِب الْأَيْمَن
+5. عَدَم الْفَصْل (الاسْتِمْرَارِيَّة)
+6. تَدْلِيك جَمِيع الْأَعْضَاء
+7. غَسْل الْقَدَمَيْن فِي مَكَان آخَر
+
+---
+
+## ملاحظة مهمة:
+**يَجُوز الصَّلاة بَعْد الْغُسْل بِدُون وُضُوء**
+- الْغُسْل يَشْمَل الْوُضُوء`
                 }
             ]
         },
         {
             id: "tahara-najasa",
-            name: "L'élimination des impuretés (إزالة النجاسات)",
-            description: "Comment nettoyer ce qui est souillé",
+            name: "إِزَالَة النَّجَاسَات",
+            description: "كَيْفِيَّة تَطْهِير الْأَشْيَاء الْنَّجِسَة",
             notes: [
                 {
                     id: "note-11",
-                    title: "Élimination des impuretés (إزالة النجاسات)",
+                    title: "إِزَالَة النَّجَاسَات",
                     date: "2026-03-01",
                     author: "Sacha",
-                    tags: ["najasa", "impureté", "nettoyage", "eau"],
-                    content: `# L'élimination des impuretés (إزالة النجاسات)
+                    tags: ["نجاسة", "تطهير", "ماء"],
+                    content: `# إِزَالَة النَّجَاسَات
 
-## POINT IMPORTANT (en rouge):
-**L'impureté (النجاسة) doit être VISIBLE ET/OU ODORANTE**
-
----
-
-## RÈGLES DE NETTOYAGE:
-
-### 1. Moyens de nettoyage:
-- L'eau (الماء) (principal moyen)
-- Transformation chimique
-- Autres moyens appropriés
-
-### 2. Nombre de lavages:
-- **AUCUN nombre exigé en général**
-- **SAUF**: Si chien bave dans un récipient
-  - Laver **7 fois** obligatoire
+## نُقْطَة مُهِمَّة:
+**النَّجَاسَة يَجِب أَن تَكُون ظَاهِرَة أَوْ لَهَا رَائِحَة**
 
 ---
 
-## CAS PARTICULIERS:
+## قَوَاعِد التَّطْهِير:
 
-### Urine de bébé garçon non-sevré:
-- **JUSTE** jeter de l'eau dessus
-- Pas nécessaire de frotter
+### 1. وَسَائِل التَّطْهِير:
+- الْمَاء (الْوَسِيلَة الْأَسَاسِيَّة)
+- التَّحَوُّل الْكِيمِيَائِيّ
+- وَسَائِل أُخْرَى مُنَاسِبَة
 
-### Urine de bébé fille non-sevrée:
-- **LAVER** à l'eau complètement
-- Frotter nécessaire
-
-**Note**: "Bébé" = ne boit que du lait/eau (pas d'aliments solides)
+### 2. عَدَد الْغَسْلات:
+- **لا عَدَد مُحَدَّد عُمُوماً**
+- **إِلا**: إِذَا لَحِس الْكَلْب الإِنَاء
+  - وُجُوب غَسْلُهُ **7 مَرَّات**
 
 ---
 
-## HIÉRARCHIE DES IMPURETÉS:
-1. Impureté visible/odorante = à nettoyer
-2. Impureté sans signe = débat entre écoles
-3. Transformation de l'impureté = elle devient pure`
+## حَالات خَاصَّة:
+
+### بَوْل الطِّفْل الذَّكَر غَيْر الْفَاطِم:
+- **فَقَط** رَشّ الْمَاء عَلَيْه
+- لا يُشْتَرَط الْفَرْك
+
+### بَوْل الطِّفْلَة غَيْر الْفَاطِمَة:
+- **غَسْل** بِالْمَاء
+- الْفَرْك ضَرُورِيّ
+
+**ملاحظة**: الطِّفْل = مَن يَشْرَب اللَّبَن فَقَط (بِدُون طَعَام صِلْب)
+
+---
+
+## تَدَرُّج النَّجَاسَة:
+1. نَجَاسَة ظَاهِرَة = تَطْهِير ضَرُورِيّ
+2. نَجَاسَة غَيْر مَرْئِيَّة = خِلاف بَيْن الْعُلَمَاء
+3. تَحَوُّل النَّجَاسَة = تَصِير طَاهِرَة`
                 }
             ]
         },
         {
             id: "tahara-tayammum",
-            name: "Tayammum (التيمم) - Ablution sèche",
-            description: "Quand on n'a pas d'eau",
+            name: "التَّيَمُّم",
+            description: "الْغُسْل بِالتُّرَاب عِنْدَ عَدَم الْمَاء",
             notes: [
                 {
                     id: "note-9",
-                    title: "Tayammum: Conditions et annulations",
+                    title: "التَّيَمُّم: شُرُوطُهُ وَنَوَاقِضُهُ",
                     date: "2026-03-01",
                     author: "Sacha",
-                    tags: ["tayammum", "ablution", "sèche", "pas-eau"],
-                    content: `# Tayammum (التيمم) - Ablution sèche
+                    tags: ["تيمم", "تراب", "بدل الماء"],
+                    content: `# التَّيَمُّم
 
-## Quand on pratique Tayammum:
-- Pas d'eau disponible
-- Eau existe mais on ne peut pas l'utiliser (blessure, maladie)
-
----
-
-## 7 CONDITIONS pour faire Tayammum:
-1. Mettre l'intention (النية)
-2. Être musulman
-3. Avoir toutes ses facultés mentales
-4. Avoir le discernement
-5. Tu n'as pas d'eau ou ne peut pas l'utiliser
-6. Le sol soit pur (إن كان نظيفاً)
-7. Pas d'eau salée ou stagnante
+## مَتَى يُمَارَس التَّيَمُّم:
+- عَدَم الْمَاء تَمَاماً
+- وُجُود الْمَاء لَكِن لا يَسْتَطِيع اسْتِعْمَالَهُ (مَرَض، جُرْح)
 
 ---
 
-## 3 OBLIGATIONS (الفرائض):
-1. Frotter le visage avec le sol pur
-2. Frotter les mains jusqu'aux poignets
-3. Sans pause (الترتيب)
+## سَبْع شُرُوط:
+
+1. النِّيَّة
+2. الْإِسْلام
+3. الْعَقْل الْكَامِل
+4. التَّمْيِيز
+5. عَدَم الْمَاء أَوْ عَدَم الاسْتِطَاعَة
+6. طُهْر التُّرَاب (إِن كَان مَرِيضاً)
+7. عَدَم الْمَاء الْمَالِح أَوْ الرَّاكِد
 
 ---
 
-## 3 choses qui ANNULENT le Tayammum:
-1. **Tout ce qui annule l'ablution (الوضوء)**
-   - Selles, urine, gaz
+## ثَلاث فَرَائِض:
 
-2. **Tu trouves de l'eau (الماء)**
-   - L'eau apparaît = tayammum invalide
+1. مَسْح الْوَجْه بِالتُّرَاب الطَّاهِر
+2. مَسْح الْيَدَيْن إِلَى الْمِرْفَقَيْن
+3. عَدَم الْفَتْرَة بَيْن الْمَسْحَتَيْن
 
-3. **Tu n'es plus malade/blessé**
-   - La condition disparaît = tayammum annulé`
+---
+
+## ثَلاث مُبْطِلَات:
+
+1. **أَيّ شَيْء يُبْطِل الْوُضُوء**
+   - الْبَرَاز، الْبَوْل، الرِّيح
+
+2. **وِجْدَان الْمَاء**
+   - ظُهُور الْمَاء = بُطْلان التَّيَمُّم
+
+3. **زَوَال سَبَب التَّيَمُّم**
+   - الشِّفَاء مِن الْمَرَض = بُطْلان التَّيَمُّم`
                 }
             ]
         },
         {
             id: "tahara-hayd",
-            name: "Les menstrues (الحيض)",
-            description: "Règles de vie pendant les menstrues et lochies",
+            name: "الْحَيْض",
+            description: "أَحْكَام الْحَيْض وَالنِّفَاس",
             notes: [
                 {
                     id: "note-12",
-                    title: "Al-Hayd: Types, interdits et permissions",
+                    title: "الْحَيْض: أَنْوَاعُهُ وَأَحْكَامُهُ",
                     date: "2026-03-01",
                     author: "Sacha",
-                    tags: ["hayd", "menstrues", "femme", "haram"],
-                    content: `# Les menstrues (الحيض)
+                    tags: ["حيض", "نفاس", "نساء"],
+                    content: `# الْحَيْض
 
-## 3 TYPES DE SAIGNEMENT:
+## ثَلاث أَنْوَاع مِن الدِّمَاء:
 
-### 1. Les menstrues (الحيض - Al-Hayd):
-- Durée maximale: **15 jours**
-- Saignement normal de la femme
+### 1. الْحَيْض (الْحَيْضَة):
+- أَقْصَى مُدَّة: **15 يَوماً**
+- دَم طَبِيعِيّ لِلنِّسَاء
 
-### 2. Les lochies (النفاس - An-Nifas):
-- Après l'accouchement
-- Durée max: **40 jours** (ou 60 selon autres avis)
+### 2. النِّفَاس:
+- بَعْد الْوِلاَدَة
+- أَقْصَى مُدَّة: **40 يَوماً** (أَوْ 60 عِنْد آخَرِين)
 
-### 3. Le sang anormal (الاستحاضة - Istihadah):
-- À partir du **16ème jour**
-- Saignement continu ou irrégulier
-
----
-
-## 7 INTERDITS (محرمات) pendant menstrues/lochies:
-
-1. ❌ Avoir des rapports conjugaux (الجماع)
-2. ❌ Se faire répudier (الطلاق)
-3. ❌ Faire la prière (الصلاة)
-4. ❌ Jeûner (الصيام)
-5. ❌ Faire Tawaf (الطواف) - autour de la Kaaba
-6. ❌ Rester dans la mosquée (المسجد)
-7. ❌ **Toucher le Coran (المصحف)** ⚠️
+### 3. الاسْتِحَاضَة:
+- مِن الْيَوْم الـ 16 فَمَا فَوْق
+- دَم غَيْر مُنْتَظِم
 
 ---
 
-## 3 PERMISSIONS après fin saignement, avant purification majeure:
+## سَبْع مَحْظُورَات أَثْنَاء الْحَيْض:
 
-1. ✅ Jeûner (الصيام)
-2. ✅ Rester dans la mosquée (المسجد)
-   - ⚠️ MAIS avec ablution (الوضوء) obligatoire ⚠️
-3. ✅ Lire le Coran (القرآن) (sans le toucher)
+1. ❌ الْجِمَاع
+2. ❌ الطَّلاق
+3. ❌ الصَّلاة
+4. ❌ الصِّيَام
+5. ❌ الطَّوَاف (حَوْل الْبَيْت)
+6. ❌ دُخُول الْمَسْجِد
+7. ❌ **مَسّ الْمُصْحَف** ⚠️
 
 ---
 
-## CAS PARTICULIERS:
+## ثَلاث إِبَاحَات بَعْد انْقِطَاع الدَّم وَقَبْل الْغُسْل:
 
-### Al-Mu'tadah (المعتادة) - "L'habituée":
-- Si habituellement 6-5 jours de règles
-- Mais un jour ça change: dès le 7ème jour elle peut faire ses actes
-- Son cas = **Mu'tadah** (habitude)
+1. ✅ الصِّيَام
+2. ✅ دُخُول الْمَسْجِد
+   - ⚠️ لَكِن بِوُضُوء وَاجِب ⚠️
+3. ✅ قِرَاءَة الْقُرْآن (بِدُون مَسّ)
 
-### At-Tamyiz (التمييز) - "La distinction":
-- Si elle distingue le sang des règles du sang anormal
-- Elle se rattache à ses actes dès qu'elle a distingué
-- Cas = **Tamyiz** (discernement)
+---
 
-### Al-Mutahayyirah (المتحيرة) - "La confuse":
-Elle ne connaît ni jours fixes, ni état du sang
+## حَالات خَاصَّة:
 
-#### **Al-Mubtadi'ah** (المبتدئة) - Cas 1:
-- Compte selon la durée générale des femmes de sa famille
+### الْمُعْتَادَة:
+- إِذَا كَانَت عَادَتُهَا 5 أَوْ 6 أَيَّام
+- فَإِنَّهَا مِن الْيَوْم السَّابِع تَرْجِع لِلطَّاهِرِ
+- تَتَطَهَّر وَتُصَلِّي
 
-#### **Nassiyah** (ناسية) - Cas 2:
-- Celle qui a oublié ses jours réguliers
-- Suit l'avis de l'école juridique`
+### الْمُمَيِّزَة:
+- تَسْتَطِيع الْفَرْق بَيْن دَم الْحَيْض وَدَم الاسْتِحَاضَة
+- تَرْجِع عِنْد التَّمْيِيز
+
+### الْمُتَحَيِّرَة:
+لا تَعْرِف أَيَّام حَيْضِهَا
+
+#### الْمُبْتَدِئَة:
+- تَسِير عَلَى عَادَة نِسَاء عَائِلَتِهَا
+
+#### الناسِيَة:
+- نَسِيَت أَيَّام عَادَتِهَا
+- تَعْمَل بِرَأْي أَهْل الْعِلْم`
                 }
             ]
         }
