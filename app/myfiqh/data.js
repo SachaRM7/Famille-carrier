@@ -4,13 +4,13 @@ const fiqhDatabase = {
     kitabs: [
         {
             id: "tahara",
-            name: "Kitab At-Tahara",
+            name: "Kitab At-Tahara (الطهارة)",
             description: "La Pureté - Ablution, ghusl et comportements",
             icon: "💧",
             portes: [
                 {
                     id: "tahara-eau",
-                    name: "L'eau et ses types",
+                    name: "L'eau (الماء) et ses types",
                     description: "Classification de l'eau: tahour, tahir, najis",
                     notes: [
                         {
@@ -21,7 +21,7 @@ const fiqhDatabase = {
                             tags: ["eau", "tahour", "tahir", "najis"],
                             content: `# Types d'eau purifiant
 
-## L'eau pure et purifiante (Al-Ma'u at-Tahour)
+## L'eau pure et purifiante (الماء الطهور)
 L'eau qui n'a pas changé en couleur, goût ou odeur à cause de quelque chose d'impur.
 
 ### Caractéristiques:
@@ -29,14 +29,14 @@ L'eau qui n'a pas changé en couleur, goût ou odeur à cause de quelque chose d
 - Avec elle on peut se purifier
 - Même si des choses (ex: algues) altèrent légèrement le goût/odeur/couleur
 
-## L'eau pure mais non-purifiante (Tahir)
+## L'eau pure mais non-purifiante (طاهر)
 L'eau mélangée avec quelque chose de propre qui change sa nature.
 
 ### Exemples:
 - Café, thé, jus
 - Se consomme mais ne purifie pas
 
-## L'eau impure (Najis)
+## L'eau impure (نجس)
 L'eau mélangée à une impureté.
 
 ### Condition:
@@ -46,15 +46,15 @@ L'eau mélangée à une impureté.
   3. L'apparence/couleur
 
 ## Classification rapide
-- **Istihala = Transformation** → Parle du moment où l'eau impure devient pure
-- **Bisar = Changement** → L'eau change de nature
-- **Fark = Distinction** → La différence entre types d'eau`
+- **Transformation (الاستحالة)** → Parle du moment où l'eau impure devient pure
+- **Changement (التغيير)** → L'eau change de nature
+- **Distinction (الفرق)** → La différence entre types d'eau`
                         }
                     ]
                 },
                 {
                     id: "tahara-recipients",
-                    name: "Les récipients",
+                    name: "Les récipients (الآنية)",
                     description: "Récipients autorisés et interdits",
                     notes: [
                         {
@@ -63,7 +63,7 @@ L'eau mélangée à une impureté.
                             date: "2026-03-01",
                             author: "Sacha",
                             tags: ["récipients", "or", "argent", "interdit"],
-                            content: `# Les récipients (Al-Aniya)
+                            content: `# Les récipients (الآنية)
 
 ## Récipients interdits
 Les récipients en **or** et **argent** sont **interdits** d'utilisation.
@@ -76,13 +76,13 @@ Les récipients en **or** et **argent** sont **interdits** d'utilisation.
 - Tous les autres matériaux
 - Récipients des non-musulmans (permis sauf si utilisés pour l'impur)
 
-## Matériaux purs après tannage
+## Matériaux purs après tannage (الدباغة)
 ### Les peaux d'animaux:
 - Peau de tous les animaux → **pure après tannage**
 - Sauf: **chien** et **porc** (restent impurs même tannés)
 
 ## Os, cornes, poils, plumes:
-- **Tahir** (propres) après l'abattage rituel
+- **Pure (طاهرة)** après l'abattage rituel
 - Peuvent être utilisés`
                         }
                     ]
@@ -98,22 +98,22 @@ Les récipients en **or** et **argent** sont **interdits** d'utilisation.
                             date: "2026-03-01",
                             author: "Sacha",
                             tags: ["toilettes", "interdit", "makruh"],
-                            content: `# Le Guss (Les besoins naturels) - Règles
+                            content: `# Le Guss (الغسل) - Les besoins naturels
 
-## Ce qui est INTERDIT (Haram):
-1. Faire face à la Qibla
+## Ce qui est INTERDIT (حرام):
+1. Faire face à la Qibla (القبلة)
 2. Dans l'eau stagnante (piscine, lac)
 3. Dans les mosquées
 4. Se nettoyer avec os/plumes/nourriture
 
-## Ce qui est DÉCONSEILLÉ (Makruh):
+## Ce qui est DÉCONSEILLÉ (مكروه - Makruh):
 1. Parler pendant les besoins
 2. Uriner face au vent
 3. Apporter quelque chose avec le nom d'Allah
 4. Se nettoyer avec la main droite
 5. Excéder le temps passé
 
-## Ce qui est RECOMMANDÉ (Mustahab):
+## Ce qui est RECOMMANDÉ (مستحب - Mustahab):
 1. Dire "Bismillah" en entrant aux toilettes
 2. Entrer du pied gauche
 3. Sortir du pied droit
@@ -123,7 +123,7 @@ Les récipients en **or** et **argent** sont **interdits** d'utilisation.
                 },
                 {
                     id: "tahara-siwak",
-                    name: "Siwak - Le brossage des dents",
+                    name: "Siwak (السواك) - Le brossage des dents",
                     description: "L'objet et les moments recommandés",
                     notes: [
                         {
@@ -132,17 +132,17 @@ Les récipients en **or** et **argent** sont **interdits** d'utilisation.
                             date: "2026-03-01",
                             author: "Sacha",
                             tags: ["siwak", "dents", "hygiène", "sunna"],
-                            content: `# Siwak (Le brossage des dents)
+                            content: `# Siwak (السواك) - Le brossage des dents
 
 ## Définition:
-- **Siwak** = L'action du brossage
-- **Misswak** = L'objet utilisé (bâton)
+- **Siwak (السواك)** = L'action du brossage
+- **Misswak (المسواك)** = L'objet utilisé (bâton)
 
-## Moments recommandés (Mustahhab):
-1. **Pendant les ablutions** (Wudhu)
-2. **Avant la prière**
+## Moments recommandés (مستحب - Mustahhab):
+1. **Pendant l'ablution (الوضوء)**
+2. **Avant la prière (الصلاة)**
 3. **Au réveil**
-4. **Pour lire le Coran**
+4. **Pour lire le Coran (القرآن)**
 5. **En rentrant chez soi**
 6. **Quand une odeur sort de la bouche**
 
@@ -151,13 +151,13 @@ Si on applique ces conseils = **jamais de caries**
 
 ## Impact:
 - Hygiène bucco-dentaire optimale
-- Sunnah fortement encouragée`
+- Sunnah (سنة) fortement encouragée`
                         }
                     ]
                 },
                 {
                     id: "tahara-wudhu",
-                    name: "Al-Wudhu - Les ablutions",
+                    name: "L'ablution (الوضوء)",
                     description: "Conditions, obligations et sunnahs du wudhu",
                     notes: [
                         {
@@ -166,48 +166,48 @@ Si on applique ces conseils = **jamais de caries**
                             date: "2026-03-01",
                             author: "Sacha",
                             tags: ["wudhu", "ablutions", "fard", "condition"],
-                            content: `# Al-Wudhu (Les ablutions)
+                            content: `# L'ablution (الوضوء)
 
 ## Terminologie Juridique:
 
-### Shart (شرط) - Condition:
+### Shart (الشرط) - Condition:
 - Récompense si tu fais ✓
 - Pas de péché si condition naturelle
 
-### Fard (فرض) - Obligation:
+### Fard (الفرض) - Obligation:
 - Péché si tu ne fais pas ✗
 
-### Wajib (واجب) - Obligatoire:
+### Wajib (الواجب) - Obligatoire:
 - Quand il y a peu de dalil (preuve)
 
-### Mustahab (مستحب) - Recommandé:
+### Mustahab (المستحب) - Recommandé:
 - Tu fais bien, pas de péché si tu ne fais pas
 
-### Mubah (مباح) - Permis:
+### Mubah (المباح) - Permis:
 - Récompense si bonne intention = habitude
 
-### Haram (حرام) - Interdit
-### Makrouh (مكروه) - Détesté
+### Haram (الحرام) - Interdit
+### Makrouh (المكروه) - Détesté
 
 ---
 
-## Les FARD (Obligations) du Wudhu:
+## Les FARD (الفرائض) du Wudhu:
 1. Rincer la bouche et aspirer avec le nez
 2. Passer sur les cheveux
-3. Faire masah sur les oreilles
+3. Faire masah (المسح) sur les oreilles
 4. Laver les mains puis les pieds jusqu'au coude
-5. **Suivre l'ordre (tartib)** - IMPORTANT
+5. **Suivre l'ordre (الترتيب - Tartib)** - IMPORTANT
 6. **Ne pas faire de pause** - c'est Fard
 
 ---
 
-## Les SHART (Conditions) du Wudhu:
+## Les SHART (الشروط) du Wudhu:
 1. Se débarrasser de ce qui annule l'ablution
 2. Être musulman
-3. Avoir l'intention (Malik dit que c'est automatique)
+3. Avoir l'intention (النية - Niyyah) - Malik dit que c'est automatique
 4. Être conscient (positif)
 5. Avoir toutes ses facultés mentales
-6. Eau pure et purifiante (tahour)
+6. Eau pure et purifiante (الماء الطهور)
 7. Retirer tout ce qui empêche l'eau d'atteindre la peau
    - Bagues, vernis, plâtre, etc.`
                         }
@@ -215,7 +215,7 @@ Si on applique ces conseils = **jamais de caries**
                 },
                 {
                     id: "tahara-khuffayn",
-                    name: "Masah sur Khuffayn",
+                    name: "Masah (المسح) sur Khuffayn (الخفين)",
                     description: "Passer les mains sur les chaussettes en cuir",
                     notes: [
                         {
@@ -224,11 +224,11 @@ Si on applique ces conseils = **jamais de caries**
                             date: "2026-03-01",
                             author: "Sacha",
                             tags: ["khuffayn", "chaussettes", "masah"],
-                            content: `# Masah sur Khuffayn (Chaussettes en cuir)
+                            content: `# Masah (المسح) sur Khuffayn (الخفين)
 
 ## 3 CONDITIONS pour faire Masah:
 1. **Porter immédiatement après ablutions complètes**
-   - ⚠️ PAS accepté si Tayammum ⚠️
+   - ⚠️ PAS accepté si Tayammum (التيمم) ⚠️
 
 2. **Le Khuff doit couvrir**
    - Toute la partie du pied
@@ -236,17 +236,17 @@ Si on applique ces conseils = **jamais de caries**
 
 3. **Doit être pur**
    - Pas sale
-   - Pas fabriqué en cuir de chien/cochon
+   - Pas fabriqué en cuir de chien/porc
 
 ---
 
-## 3 ANNULATIONS du Masah (Mubtilat):
+## 3 ANNULATIONS du Masah (المبطلات):
 
-1. **Si Djanaba** (ce qui oblige le Ghusl)
-   - Perte de sperme = Ghusl obligatoire
+1. **Si Djanaba (جنابة)** (ce qui oblige le Ghusl)
+   - Perte de sperme = Ghusl (الغسل) obligatoire
    - Masah invalide
 
-2. **Si la durée s'écoule**
+2. **Si la durée s'écoule (المدة)**
    - Voyageur = 3 jours + 3 nuits (72h)
    - Non-Voyageur = 1 jour + 1 nuit (24h)
 
@@ -264,57 +264,8 @@ Si on applique ces conseils = **jamais de caries**
                     ]
                 },
                 {
-                    id: "tahara-tayammum",
-                    name: "Tayammum - Ablution sèche",
-                    description: "Quand on n'a pas d'eau",
-                    notes: [
-                        {
-                            id: "note-9",
-                            title: "Tayammum: Conditions et annulations",
-                            date: "2026-03-01",
-                            author: "Sacha",
-                            tags: ["tayammum", "ablution", "sèche", "pas-eau"],
-                            content: `# Tayammum (التيمم) - Ablution sèche
-
-## Quand on pratique Tayammum:
-- Pas d'eau disponible
-- Eau existe mais on ne peut pas l'utiliser (blessure, maladie)
-
----
-
-## 7 CONDITIONS pour faire Tayammum:
-1. Mettre l'intention
-2. Être musulman
-3. Avoir toutes ses facultés mentales
-4. Avoir le discernement
-5. Tu n'as pas d'eau ou ne peut pas l'utiliser
-6. Le sol soit propre (si malade)
-7. Pas d'eau salée ou stagnante
-
----
-
-## 3 OBLIGATIONS (Fard):
-1. Frotter le visage avec le sol pur
-2. Frotter les mains jusqu'aux poignets
-3. Sans pause (tartib)
-
----
-
-## 3 choses qui ANNULENT le Tayammum:
-1. **Tout ce qui annule le Wudhu**
-   - Selles, urine, gaz
-
-2. **Tu trouves de l'eau**
-   - L'eau apparaît = tayammum invalide
-
-3. **Tu n'es plus malade/blessé**
-   - La condition disparaît = tayammum annulé`
-                        }
-                    ]
-                },
-                {
                     id: "tahara-annulation",
-                    name: "Ce qui annule l'ablution",
+                    name: "Ce qui annule l'ablution (نواقض الوضوء)",
                     description: "Les choses qui invalident le wudhu",
                     notes: [
                         {
@@ -323,11 +274,11 @@ Si on applique ces conseils = **jamais de caries**
                             date: "2026-03-01",
                             author: "Sacha",
                             tags: ["ablution", "annulation", "wudhu"],
-                            content: `# Ce qui annule l'ablution (Nawaqid Al-Wudhu)
+                            content: `# Ce qui annule l'ablution (نواقض الوضوء)
 
-## Choses qui annulent le Wudhu:
-1. Selles (urine, selles)
-2. Gaz (pet)
+## Choses qui annulent l'ablution (الوضوء):
+1. Selles (البراز) - urine, selles
+2. Gaz (الريح) - pet
 3. Écoulement du sang en grande quantité
 4. Perte de conscience
 5. Sommeil profond
@@ -336,16 +287,16 @@ Si on applique ces conseils = **jamais de caries**
 8. Consommation d'aliments contenant une substance stupéfiante
 
 ## Après annulation:
-- Impossible de faire la Salat
-- Impossible de faire Tawaf
-- Impossible de toucher le Mushaf
+- Impossible de faire la Prière (الصلاة)
+- Impossible de faire Tawaf (الطواف)
+- Impossible de toucher le Mushaf (المصحف)
 - Nécessité de refaire les ablutions complètes`
                         }
                     ]
                 },
                 {
                     id: "tahara-ghusl",
-                    name: "Al-Ghusl - Grandes ablutions",
+                    name: "Le Ghusl (الغسل) - Grandes ablutions",
                     description: "Les ablutions majeures et leurs conditions",
                     notes: [
                         {
@@ -354,48 +305,48 @@ Si on applique ces conseils = **jamais de caries**
                             date: "2026-03-01",
                             author: "Sacha",
                             tags: ["ghusl", "janaba", "ablutions", "majeures"],
-                            content: `# Al-Ghusl (الغسل) - Les grandes ablutions
+                            content: `# Le Ghusl (الغسل) - Les grandes ablutions
 
-## 5 CHOSES NÉCESSITANT le Ghusl (Wujûb):
+## 5 CHOSES NÉCESSITANT le Ghusl (الوجوب):
 
-1. **La sortie du sperme**
+1. **La sortie du sperme (الإنزال)**
    - Éjaculation = Ghusl obligatoire
 
-2. **Le rapport conjugal**
+2. **Le rapport conjugal (الجماع)**
    - Pénétration = Ghusl obligatoire
    - ⚠️ MÊME SANS ÉJACULATION ⚠️
 
-3. **La sortie des menstrues**
+3. **La sortie des menstrues (الحيض)**
    - Fin de période menstruelle = Ghusl
 
-4. **La sortie des lochies**
+4. **La sortie des lochies (النفاس)**
    - Après l'accouchement = Ghusl
 
-5. **En entrant dans l'Islam**
+5. **En entrant dans l'Islam (الإسلام)**
    - Conversion = Ghusl obligatoire
 
 ---
 
-## 7 CONDITIONS (Shart) pour faire Ghusl:
+## 7 CONDITIONS (الشروط) pour faire Ghusl:
 
 1. Se débarrasser de ce qui nécessite le ghusl
-2. Mettre l'intention
+2. Mettre l'intention (النية)
 3. Être musulman
 4. Avoir toutes ses facultés mentales
 5. Être conscient
-6. Utiliser eau Tahur (pure & purifiante)
+6. Utiliser eau Pure (ماء طهور)
 7. Retirer tout ce qui empêche l'eau d'atteindre la peau
 
 ---
 
-## 1 SEULE OBLIGATION (Fard):
-### Mouiller **TOUT** le corps
+## 1 SEULE OBLIGATION (الفرض):
+### Mouiller **TOUT** le corps (تعميم الماء)
 - Pas un cheveu qui reste sec
 - Chaque millimètre du corps
 
 ---
 
-## 7 SUNNAHS (Recommandé):
+## 7 SUNNAHS (السنن) (Recommandé):
 1. Laver d'abord la partie souillée
 2. Faire les ablutions complètes pendant le ghusl
 3. Mouiller 3 fois chaque membre
@@ -407,7 +358,7 @@ Si on applique ces conseils = **jamais de caries**
 ---
 
 ## NOTE IMPORTANTE:
-**On peut prier après le Ghusl SANS refaire le Wudhu**
+**On peut prier après le Ghusl SANS refaire l'ablution (الوضوء)**
 - Le ghusl inclut les ablutions
 - Pas besoin de wudhu supplémentaire`
                         }
@@ -415,26 +366,26 @@ Si on applique ces conseils = **jamais de caries**
                 },
                 {
                     id: "tahara-najasa",
-                    name: "L'élimination des impuretés",
+                    name: "L'élimination des impuretés (إزالة النجاسات)",
                     description: "Comment nettoyer ce qui est souillé",
                     notes: [
                         {
                             id: "note-11",
-                            title: "Élimination des impuretés (Najasa)",
+                            title: "Élimination des impuretés (إزالة النجاسات)",
                             date: "2026-03-01",
                             author: "Sacha",
                             tags: ["najasa", "impureté", "nettoyage", "eau"],
                             content: `# L'élimination des impuretés (إزالة النجاسات)
 
 ## POINT IMPORTANT (en rouge):
-**L'impureté doit être VISIBLE ET/OU ODORANTE**
+**L'impureté (النجاسة) doit être VISIBLE ET/OU ODORANTE**
 
 ---
 
 ## RÈGLES DE NETTOYAGE:
 
 ### 1. Moyens de nettoyage:
-- L'eau (principal moyen)
+- L'eau (الماء) (principal moyen)
 - Transformation chimique
 - Autres moyens appropriés
 
@@ -467,8 +418,57 @@ Si on applique ces conseils = **jamais de caries**
                     ]
                 },
                 {
+                    id: "tahara-tayammum",
+                    name: "Tayammum (التيمم) - Ablution sèche",
+                    description: "Quand on n'a pas d'eau",
+                    notes: [
+                        {
+                            id: "note-9",
+                            title: "Tayammum: Conditions et annulations",
+                            date: "2026-03-01",
+                            author: "Sacha",
+                            tags: ["tayammum", "ablution", "sèche", "pas-eau"],
+                            content: `# Tayammum (التيمم) - Ablution sèche
+
+## Quand on pratique Tayammum:
+- Pas d'eau disponible
+- Eau existe mais on ne peut pas l'utiliser (blessure, maladie)
+
+---
+
+## 7 CONDITIONS pour faire Tayammum:
+1. Mettre l'intention (النية)
+2. Être musulman
+3. Avoir toutes ses facultés mentales
+4. Avoir le discernement
+5. Tu n'as pas d'eau ou ne peut pas l'utiliser
+6. Le sol soit pur (إن كان نظيفاً)
+7. Pas d'eau salée ou stagnante
+
+---
+
+## 3 OBLIGATIONS (الفرائض):
+1. Frotter le visage avec le sol pur
+2. Frotter les mains jusqu'aux poignets
+3. Sans pause (الترتيب)
+
+---
+
+## 3 choses qui ANNULENT le Tayammum:
+1. **Tout ce qui annule l'ablution (الوضوء)**
+   - Selles, urine, gaz
+
+2. **Tu trouves de l'eau (الماء)**
+   - L'eau apparaît = tayammum invalide
+
+3. **Tu n'es plus malade/blessé**
+   - La condition disparaît = tayammum annulé`
+                        }
+                    ]
+                },
+                {
                     id: "tahara-hayd",
-                    name: "Al-Hayd - Les menstrues",
+                    name: "Les menstrues (الحيض)",
                     description: "Règles de vie pendant les menstrues et lochies",
                     notes: [
                         {
@@ -477,42 +477,42 @@ Si on applique ces conseils = **jamais de caries**
                             date: "2026-03-01",
                             author: "Sacha",
                             tags: ["hayd", "menstrues", "femme", "haram"],
-                            content: `# Al-Hayd (الحيض) - Les menstrues
+                            content: `# Les menstrues (الحيض)
 
 ## 3 TYPES DE SAIGNEMENT:
 
-### 1. Les menstrues (Al-Hayd):
+### 1. Les menstrues (الحيض - Al-Hayd):
 - Durée maximale: **15 jours**
 - Saignement normal de la femme
 
-### 2. Les lochies (Al-Nifas):
+### 2. Les lochies (النفاس - An-Nifas):
 - Après l'accouchement
 - Durée max: **40 jours** (ou 60 selon autres avis)
 
-### 3. Le sang anormal (Istihadah):
+### 3. Le sang anormal (الاستحاضة - Istihadah):
 - À partir du **16ème jour**
 - Saignement continu ou irrégulier
 
 ---
 
-## 7 INTERDITS pendant menstrues/lochies (HARAM):
+## 7 INTERDITS (محرمات) pendant menstrues/lochies:
 
-1. ❌ Avoir des rapports conjugaux
-2. ❌ Se faire répudier
-3. ❌ Faire la prière
-4. ❌ Jeûner
-5. ❌ Faire Tawaf (autour de la Kaaba)
-6. ❌ Rester dans la mosquée
-7. ❌ **Toucher le Coran** ⚠️
+1. ❌ Avoir des rapports conjugaux (الجماع)
+2. ❌ Se faire répudier (الطلاق)
+3. ❌ Faire la prière (الصلاة)
+4. ❌ Jeûner (الصيام)
+5. ❌ Faire Tawaf (الطواف) - autour de la Kaaba
+6. ❌ Rester dans la mosquée (المسجد)
+7. ❌ **Toucher le Coran (المصحف)** ⚠️
 
 ---
 
 ## 3 PERMISSIONS après fin saignement, avant purification majeure:
 
-1. ✅ Jeûner
-2. ✅ Rester dans la mosquée
-   - ⚠️ MAIS avec Wudhu obligatoire ⚠️
-3. ✅ Lire le Coran (sans le toucher)
+1. ✅ Jeûner (الصيام)
+2. ✅ Rester dans la mosquée (المسجد)
+   - ⚠️ MAIS avec ablution (الوضوء) obligatoire ⚠️
+3. ✅ Lire le Coran (القرآن) (sans le toucher)
 
 ---
 
