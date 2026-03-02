@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#1a472a">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="MyFiqh">
+    <title>MyFiqh - Notes de Fiqh</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 180'><rect fill='%231a472a' width='180' height='180'/><text x='50%' y='50%' font-size='80' fill='white' text-anchor='middle' dy='.35em'>📖</text></svg>">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <h1>📖 MyFiqh</h1>
+            <p class="subtitle">Notes de Fiqh Islamique</p>
+        </div>
+    </header>
+
+    <!-- Search & Filter -->
+    <div class="container">
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="🔍 Chercher par mots-clés..." class="search-input">
+            <select id="kitabFilter" class="filter-select">
+                <option value="">Tous les Kitabs</option>
+            </select>
+        </div>
+
+        <!-- Main Content -->
+        <main id="mainContent" class="main-content">
+            <!-- Kitabs List View (default) -->
+            <div id="kitabsListView" class="view active">
+                <div id="kitabsList" class="kitabs-grid"></div>
+            </div>
+
+            <!-- Portes View (when kitab selected) -->
+            <div id="portesView" class="view">
+                <button class="btn-back" onclick="backToKitabs()">← Retour</button>
+                <div id="portesContent"></div>
+            </div>
+
+            <!-- Notes View (when porte selected) -->
+            <div id="notesView" class="view">
+                <button class="btn-back" onclick="backToPortes()">← Retour</button>
+                <div id="notesContent"></div>
+            </div>
+
+            <!-- Note Detail View -->
+            <div id="noteDetailView" class="view">
+                <button class="btn-back" onclick="backToNotes()">← Retour</button>
+                <div id="noteDetailContent"></div>
+            </div>
+
+            <!-- Search Results View -->
+            <div id="searchResultsView" class="view">
+                <button class="btn-back" onclick="clearSearch()">← Retour</button>
+                <div id="searchResults" class="search-results"></div>
+            </div>
+        </main>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
