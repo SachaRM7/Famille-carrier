@@ -32,13 +32,17 @@ const fiqhDatabase = {
 
 // Charger tous les kitabs
 function loadKitabs() {
-    // Pour l'instant, ajouter At-Tahara
+    // Ajouter At-Tahara
     if (typeof KITAB_TAHARA !== 'undefined') {
         fiqhDatabase.kitabs.push(KITAB_TAHARA);
     }
     
+    // Ajouter As-Salat
+    if (typeof KITAB_SALAT !== 'undefined') {
+        fiqhDatabase.kitabs.push(KITAB_SALAT);
+    }
+    
     // Futurs kitabs à ajouter:
-    // if (typeof KITAB_SALAT !== 'undefined') { fiqhDatabase.kitabs.push(KITAB_SALAT); }
     // if (typeof KITAB_ZAKAT !== 'undefined') { fiqhDatabase.kitabs.push(KITAB_ZAKAT); }
     // if (typeof KITAB_SIHAM !== 'undefined') { fiqhDatabase.kitabs.push(KITAB_SIHAM); }
     // etc...
