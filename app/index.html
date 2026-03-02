@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#667eea">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="FamilyHealth">
+    <title>FamilyHealth</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 180'><rect fill='%23667eea' width='180' height='180'/><text x='50%' y='50%' font-size='90' fill='white' text-anchor='middle' dy='.3em'>❤️</text></svg>">
+    <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 180'><rect fill='%23667eea' width='180' height='180'/><text x='50%' y='50%' font-size='90' fill='white' text-anchor='middle' dy='.3em'>❤️</text></svg>">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Profile Selector -->
+    <div class="profile-bar">
+        <button class="profile-btn active" data-profile="sacha" onclick="switchProfile('sacha')">
+            <span class="emoji">👨</span>
+            <span class="name">Sacha</span>
+        </button>
+        <button class="profile-btn" data-profile="femme" onclick="switchProfile('femme')">
+            <span class="emoji">👩</span>
+            <span class="name">Femme</span>
+        </button>
+        <button class="profile-btn" data-profile="bebe" onclick="switchProfile('bebe')">
+            <span class="emoji">👶</span>
+            <span class="name">Bébé</span>
+        </button>
+    </div>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h1 id="profileTitle">Aujourd'hui - Sacha 💪</h1>
+            <p id="profileDate" class="date"></p>
+        </header>
+
+        <!-- Content by Profile -->
+        <main id="mainContent">
+            <!-- Sacha Profile -->
+            <div id="sacha-content" class="profile-content active">
+                <!-- Eau -->
+                <section class="card eau-card">
+                    <div class="card-header">
+                        <h2>💧 Eau</h2>
+                        <span class="counter" id="sacha-water">0</span><span class="unit">/8</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="sacha-water-bar"></div>
+                    </div>
+                    <div class="quick-actions">
+                        <button class="btn-quick" onclick="addWater('sacha')">+1</button>
+                        <button class="btn-quick secondary" onclick="undo('sacha', 'water')">↶</button>
+                    </div>
+                </section>
+
+                <!-- Poids -->
+                <section class="card poids-card">
+                    <div class="card-header">
+                        <h2>⚖️ Poids</h2>
+                        <span id="sacha-poids" class="value">--</span>
+                    </div>
+                    <div class="input-inline">
+                        <input type="number" id="sacha-poids-input" placeholder="kg" step="0.1">
+                        <button class="btn-quick" onclick="logPoids('sacha')">✓</button>
+                    </div>
+                </section>
+
+                <!-- Pas (Santé) -->
+                <section class="card pas-card">
+                    <div class="card-header">
+                        <h2>👟 Pas</h2>
+                        <span class="counter" id="sacha-steps">0</span><span class="unit">/10K</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="sacha-steps-bar"></div>
+                    </div>
+                    <p class="hint">🔗 Sync avec Apple Santé (Renpho)</p>
+                </section>
+
+                <!-- Séance Sport -->
+                <section class="card seance-card">
+                    <div class="card-header">
+                        <h2>🏃 Séance Sport</h2>
+                    </div>
+                    <div class="input-inline">
+                        <input type="text" id="sacha-seance-name" placeholder="Ex: 30min running">
+                        <button class="btn-quick" onclick="startSeance('sacha')">Lancer</button>
+                    </div>
+                    <div id="sacha-seance-active" class="seance-active hidden">
+                        <p id="sacha-seance-timer">00:00</p>
+                        <button class="btn-quick stop" onclick="stopSeance('sacha')">Stop</button>
+                    </div>
+                    <div id="sacha-seance-log" class="seance-log"></div>
+                </section>
+
+                <!-- Repas -->
+                <section class="card repas-card">
+                    <div class="card-header">
+                        <h2>🍽️ Repas</h2>
+                    </div>
+                    <div class="input-inline">
+                        <input type="text" id="sacha-repas" placeholder="Ex: Déjeuner">
+                        <button class="btn-quick" onclick="logRepas('sacha')">+</button>
+                    </div>
+                    <div id="sacha-repas-log" class="log-list"></div>
+                </section>
+            </div>
+
+            <!-- Femme Profile -->
+            <div id="femme-content" class="profile-content">
+                <!-- Eau -->
+                <section class="card eau-card">
+                    <div class="card-header">
+                        <h2>💧 Eau</h2>
+                        <span class="counter" id="femme-water">0</span><span class="unit">/8</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="femme-water-bar"></div>
+                    </div>
+                    <div class="quick-actions">
+                        <button class="btn-quick" onclick="addWater('femme')">+1</button>
+                        <button class="btn-quick secondary" onclick="undo('femme', 'water')">↶</button>
+                    </div>
+                </section>
+
+                <!-- Poids -->
+                <section class="card poids-card">
+                    <div class="card-header">
+                        <h2>⚖️ Poids</h2>
+                        <span id="femme-poids" class="value">--</span>
+                    </div>
+                    <div class="input-inline">
+                        <input type="number" id="femme-poids-input" placeholder="kg" step="0.1">
+                        <button class="btn-quick" onclick="logPoids('femme')">✓</button>
+                    </div>
+                </section>
+
+                <!-- Pas (Santé) -->
+                <section class="card pas-card">
+                    <div class="card-header">
+                        <h2>👟 Pas</h2>
+                        <span class="counter" id="femme-steps">0</span><span class="unit">/10K</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="femme-steps-bar"></div>
+                    </div>
+                    <p class="hint">🔗 Sync avec Apple Santé</p>
+                </section>
+
+                <!-- Repas -->
+                <section class="card repas-card">
+                    <div class="card-header">
+                        <h2>🍽️ Repas</h2>
+                    </div>
+                    <div class="input-inline">
+                        <input type="text" id="femme-repas" placeholder="Ex: Déjeuner">
+                        <button class="btn-quick" onclick="logRepas('femme')">+</button>
+                    </div>
+                    <div id="femme-repas-log" class="log-list"></div>
+                </section>
+            </div>
+
+            <!-- Bébé Profile -->
+            <div id="bebe-content" class="profile-content">
+                <!-- Sommeil -->
+                <section class="card sommeil-card">
+                    <div class="card-header">
+                        <h2>😴 Sommeil</h2>
+                    </div>
+                    <div class="input-inline">
+                        <input type="number" id="bebe-sommeil-minutes" placeholder="Minutes" min="0">
+                        <button class="btn-quick" onclick="logSommeil('bebe')">Enregistrer</button>
+                    </div>
+                    <div id="bebe-sommeil-log" class="log-list"></div>
+                </section>
+
+                <!-- Biberon -->
+                <section class="card biberon-card">
+                    <div class="card-header">
+                        <h2>🍼 Biberon</h2>
+                    </div>
+                    <div class="input-inline">
+                        <input type="number" id="bebe-biberon-ml" placeholder="ml" min="0" step="10">
+                        <button class="btn-quick" onclick="logBiberon('bebe')">+</button>
+                    </div>
+                    <div id="bebe-biberon-log" class="log-list"></div>
+                </section>
+
+                <!-- Activités -->
+                <section class="card activites-card">
+                    <div class="card-header">
+                        <h2>🎨 Activités</h2>
+                    </div>
+                    <div class="input-inline">
+                        <input type="text" id="bebe-activite" placeholder="Ex: Jeu libre">
+                        <button class="btn-quick" onclick="logActivite('bebe')">+</button>
+                    </div>
+                    <div id="bebe-activite-log" class="log-list"></div>
+                </section>
+
+                <!-- DME (Diversification Menée par l'Enfant) -->
+                <section class="card dme-card">
+                    <div class="card-header">
+                        <h2>🥕 DME / Repas</h2>
+                    </div>
+                    <div class="input-inline">
+                        <input type="text" id="bebe-repas" placeholder="Ex: Carotte rôtie">
+                        <button class="btn-quick" onclick="logBebeRepas('bebe')">+</button>
+                    </div>
+                    <div id="bebe-repas-log" class="log-list"></div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <!-- Loading -->
+    <div id="loading" class="loading hidden">
+        <p>⏳</p>
+    </div>
+
+    <script src="firebase-config.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
