@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthApp - Suivi Santé</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>💪 HealthApp</h1>
+            <p class="subtitle">Suivi quotidien de santé</p>
+        </header>
+
+        <main>
+            <!-- Eau -->
+            <section class="card eau-card">
+                <div class="card-header">
+                    <h2>💧 Eau</h2>
+                    <span class="water-counter" id="waterCount">0</span><span class="unit">verre</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="waterProgress"></div>
+                </div>
+                <p class="target">Objectif: 8 verres / jour</p>
+                <div class="button-group">
+                    <button class="btn btn-sm" onclick="addWater()">+1 verre</button>
+                    <button class="btn btn-secondary btn-sm" onclick="removeWater()">-1</button>
+                    <button class="btn btn-reset btn-sm" onclick="resetWater()">Réinitialiser</button>
+                </div>
+            </section>
+
+            <!-- Poids -->
+            <section class="card poids-card">
+                <div class="card-header">
+                    <h2>⚖️ Poids</h2>
+                    <div class="input-group">
+                        <input type="number" id="poidsInput" placeholder="kg" step="0.1">
+                        <button class="btn btn-sm" onclick="addPoids()">Enregistrer</button>
+                    </div>
+                </div>
+                <div id="poidsList" class="history-list">
+                    <p class="empty">Aucun enregistrement</p>
+                </div>
+            </section>
+
+            <!-- Pas -->
+            <section class="card pas-card">
+                <div class="card-header">
+                    <h2>👟 Pas</h2>
+                    <span class="steps-counter" id="stepsCount">0</span><span class="unit">pas</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="stepsProgress"></div>
+                </div>
+                <p class="target">Objectif: 10 000 pas / jour</p>
+                <div class="button-group">
+                    <button class="btn btn-sm" onclick="addSteps(100)">+100</button>
+                    <button class="btn btn-sm" onclick="addSteps(500)">+500</button>
+                    <button class="btn btn-sm" onclick="addSteps(1000)">+1000</button>
+                    <button class="btn btn-secondary btn-sm" onclick="removeSteps()">-100</button>
+                    <button class="btn btn-reset btn-sm" onclick="resetSteps()">Réinitialiser</button>
+                </div>
+            </section>
+
+            <!-- Résumé -->
+            <section class="card resume-card">
+                <h2>📊 Résumé du jour</h2>
+                <div class="stats">
+                    <div class="stat">
+                        <span class="label">Eau</span>
+                        <span class="value" id="resumeWater">0/8</span>
+                    </div>
+                    <div class="stat">
+                        <span class="label">Pas</span>
+                        <span class="value" id="resumeSteps">0/10000</span>
+                    </div>
+                    <div class="stat">
+                        <span class="label">Poids</span>
+                        <span class="value" id="resumePoids">--</span>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <button class="btn btn-secondary" onclick="exportData()">💾 Exporter données</button>
+            <button class="btn btn-secondary" onclick="clearAllData()">🗑️ Tout réinitialiser</button>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
