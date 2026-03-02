@@ -304,19 +304,73 @@ function renderSearchResults(query) {
     });
 }
 
-// ===== Markdown Rendering (basique) =====
+// ===== Markdown Rendering =====
 function renderMarkdown(markdown, containerId) {
-    let html = markdown
-        .replace(/^# (.*?)$/gm, '<h3>$1</h3>')
-        .replace(/^## (.*?)$/gm, '<h4>$1</h4>')
-        .replace(/^\*\*\*(.*?)\*\*\*$/gm, '<strong><em>$1</em></strong>')
-        .replace(/^\*\*(.*?)\*\*$/gm, '<strong>$1</strong>')
-        .replace(/^\*(.*?)\*$/gm, '<em>$1</em>')
-        .replace(/^- (.*?)$/gm, '<li>$1</li>')
-        .replace(/(<li>.*<\/li>)/s, '<ul>$1</ul>')
-        .replace(/^\d+\. (.*?)$/gm, '<li>$1</li>')
-        .replace(/([^<])\n([^<])/g, '$1<br>$2')
-        .split('\n').join('<p>').join('</p>');
+    let lines = markdown.split('\n');
+    let html = '';
+    let inList = false;
+    let inOrderedList = false;
+
+    for (let i = 0; i < lines.length; i++) {
+        let line = lines[i];
+
+        // H1 (titre principal)
+        if (line.startsWith('# ')) {
+            html += '<h2 style="color: var(--primary); margin-top: 20px; margin-bottom: 10px;">' + line.substring(2) + '</h2>';
+        }
+        // H2 (sous-titre)
+        else if (line.startsWith('## ')) {
+            html += '<h3 style="color: var(--primary); margin-top: 15px; margin-bottom: 8px;">' + line.substring(3) + '</h3>';
+        }
+        // H3 (sous-sous-titre)
+        else if (line.startsWith('### ')) {
+            html += '<h4 style="color: var(--text-light); margin-top: 12px; margin-bottom: 6px;">' + line.substring(4) + '</h4>';
+        }
+        // Bullet list
+        else if (line.startsWith('- ')) {
+            if (!inList) {
+                html += '<ul style="margin-left: 20px; margin-bottom: 12px;">';
+                inList = true;
+            }
+            html += '<li style="margin-bottom: 6px;">' + line.substring(2) + '</li>';
+        }
+        // Ordered list
+        else if (line.match(/^\d+\. /)) {
+            if (!inOrderedList) {
+                html += '<ol style="margin-left: 20px; margin-bottom: 12px;">';
+                inOrderedList = true;
+            }
+            html += '<li style="margin-bottom: 6px;">' + line.replace(/^\d+\.\s/, '') + '</li>';
+        }
+        // Bold + Italic + basic formatting
+        else if (line.trim() !== '') {
+            if (inList) {
+                html += '</ul>';
+                inList = false;
+            }
+            if (inOrderedList) {
+                html += '</ol>';
+                inOrderedList = false;
+            }
+            
+            let text = line
+                .replace(/\*\*\*(.*?)\*\*\*/g, '<strong><em>$1</em></strong>')
+                .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+                .replace(/\*(.*?)\*/g, '<em>$1</em>')
+                .replace(/____(.*?)____/g, '<u>$1</u>')
+                .replace(/\[([^\]]+)\]\(([^\)]+)\)/g, '<a href="$2" style="color: var(--primary);">$1</a>')
+                .replace(/`([^`]+)`/g, '<code style="background: var(--light); padding: 2px 6px; border-radius: 3px;">$1</code>');
+            
+            html += '<p style="margin-bottom: 12px; line-height: 1.8;">' + text + '</p>';
+        }
+        // Empty line
+        else if (line.trim() === '') {
+            // Skip empty lines (they're handled by markdown structure)
+        }
+    }
+
+    if (inList) html += '</ul>';
+    if (inOrderedList) html += '</ol>';
 
     document.getElementById(containerId).innerHTML = html;
 }
