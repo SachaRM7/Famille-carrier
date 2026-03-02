@@ -1,36 +1,36 @@
-// Baab 3: الْحَاجَة (Les besoins naturels)
+// Baab 3: Les besoins naturels
 
 const TAHARA_BAAB_BESOINS = {
     id: "tahara-besoins",
-    name: "الْحَاجَة (قَضَاء الْحَاجَة)",
-    description: "أَحْكَام الْخَلاء وَالتَّطَهُّر",
+    name: "Les besoins naturels",
+    description: "Règles des toilettes, endroits autorisés et interdits",
     notes: [
         {
             id: "note-4",
-            title: "أَحْكَام قَضَاء الْحَاجَة",
+            title: "Le Guss (toilettes) - Ce qui est interdit",
             date: "2026-03-01",
             author: "Sacha",
-            tags: ["حاجة", "حرام", "مكروه", "مستحب"],
-            content: `# أَحْكَام قَضَاء الْحَاجَة
+            tags: ["toilettes", "interdit", "makruh"],
+            content: `# Le Guss (الْغُسْل) - Les besoins naturels
 
-## الْمَحْظُورَات (الحَرَام):
-1. اسْتِقْبَال الْقِبْلَة
-2. فِي الْمَاء الرَّاكِد
-3. فِي الْمَسَاجِد
-4. الاسْتِنْجَاء بِالْعِظَام أَوْ الرِّيش أَوْ الطَّعَام
+## Ce qui est INTERDIT (حَرَام):
+1. Faire face à la Qibla (القِبْلَة)
+2. Dans l'eau stagnante (piscine, lac)
+3. Dans les mosquées
+4. Se nettoyer avec os/plumes/nourriture
 
-## الْمَكْرُوهَات:
-1. الْكَلام أَثْنَاء قَضَاء الْحَاجَة
-2. اسْتِقْبَال الرِّيح وَالتَّبَوُّل فِيهَا
-3. حَمْل مَا فِيه اسْم اللَّه
-4. الاسْتِنْجَاء بِالْيَد الْيُمْنَى
-5. إِطَالَة الْمُكْث
+## Ce qui est DÉCONSEILLÉ (مَكْرُوه - Makruh):
+1. Parler pendant les besoins
+2. Uriner face au vent
+3. Apporter quelque chose avec le nom d'Allah
+4. Se nettoyer avec la main droite
+5. Excéder le temps passé
 
-## الْمُسْتَحَبَّات:
-1. قَوْل "بِسْم اللَّه" عِنْد الدُّخُول
-2. الدُّخُول بِالرِّجْل الْيُسْرَى
-3. الْخُرُوج بِالرِّجْل الْيُمْنَى
-4. قَوْل "غُفْرَانَك" (الاسْتِغْفَار)`
+## Ce qui est RECOMMANDÉ (مُسْتَحَبّ - Mustahab):
+1. Dire "Bismillah" en entrant aux toilettes
+2. Entrer du pied gauche
+3. Sortir du pied droit
+4. Dire "Ghoufranak" (pardon) à Allah`
         }
     ]
 };

@@ -1,9 +1,9 @@
-// كِتَاب الطَّهَارَة (Kitab At-Tahara)
+// Kitab At-Tahara (كِتَاب الطَّهَارَة)
 // Combine tous les baabs depuis tahara/
 
 const KITAB_TAHARA = {
     id: "tahara",
-    name: "كِتَاب الطَّهَارَة",
+    name: "Kitab At-Tahara (كِتَاب الطَّهَارَة)",
     description: "La Pureté - Ablution, ghusl et comportements",
     icon: "💧",
     portes: [

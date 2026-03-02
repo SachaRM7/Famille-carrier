@@ -1,70 +1,72 @@
-// Baab 8: الْغُسْل (Le Ghusl)
+// Baab 8: Le Ghusl - Grandes ablutions
 
 const TAHARA_BAAB_GHUSL = {
     id: "tahara-ghusl",
-    name: "الْغُسْل (الاغْتِسَال)",
-    description: "الْغُسْل الْوَاجِب وَشُرُوطُهُ",
+    name: "Le Ghusl (الْغُسْل) - Grandes ablutions",
+    description: "Les ablutions majeures et leurs conditions",
     notes: [
         {
             id: "note-10",
-            title: "الْغُسْل: شُرُوطُهُ وَفَرَائِضُهُ",
+            title: "Ghusl: 5 nécessités, 7 conditions, 1 obligation",
             date: "2026-03-01",
             author: "Sacha",
-            tags: ["غسل", "جنابة", "غسل واجب"],
-            content: `# الْغُسْل
+            tags: ["ghusl", "janaba", "ablutions", "majeures"],
+            content: `# Le Ghusl (الْغُسْل) - Les grandes ablutions
 
-## خَمْس حَالات تَوْجِب الْغُسْل:
+## 5 CHOSES NÉCESSITANT le Ghusl (الْوُجُوب):
 
-1. **خُرُوج الْمَنِيّ**
-   - الإِنْزَال = غُسْل وَاجِب
+1. **La sortie du sperme (الإِنْزَال)**
+   - Éjaculation = Ghusl obligatoire
 
-2. **الْجِمَاع**
-   - الدُّخُول = غُسْل وَاجِب
-   - ⚠️ حَتَّى بِدُون إِنْزَال ⚠️
+2. **Le rapport conjugal (الْجِمَاع)**
+   - Pénétration = Ghusl obligatoire
+   - ⚠️ MÊME SANS ÉJACULATION ⚠️
 
-3. **انْقِطَاع حَيْض**
-   - نِهَايَة الْحَيْض = غُسْل وَاجِب
+3. **La sortie des menstrues (الْحَيْض)**
+   - Fin de période menstruelle = Ghusl
 
-4. **انْقِطَاع نِفَاس**
-   - بَعْد الْوِلاَدَة = غُسْل وَاجِب
+4. **La sortie des lochies (النِّفَاس)**
+   - Après l'accouchement = Ghusl
 
-5. **الدُّخُول فِي الْإِسْلام**
-   - التَّشَهُّد = غُسْل وَاجِب
-
----
-
-## سَبْع شُرُوط:
-
-1. التَّخَلُّص مِمَّا يَوْجِب الْغُسْل
-2. النِّيَّة
-3. الْإِسْلام
-4. الْعَقْل
-5. التَّمْيِيز
-6. مَاء طَهُور
-7. إِزَالَة مَا يَمْنَع وُصُول الْمَاء
+5. **En entrant dans l'Islam (الْإِسْلام)**
+   - Conversion = Ghusl obligatoire
 
 ---
 
-## فَرْض وَاحِد:
-### تَعْمِيم الْمَاء عَلَى الْجَسَد كُلِّه
-- لا يَبْقَى شَعْرَة إِلا وَصَلَ إِلَيْهَا الْمَاء
+## 7 CONDITIONS (الشُّرُوط) pour faire Ghusl:
+
+1. Se débarrasser de ce qui nécessite le ghusl
+2. Mettre l'intention (النِّيَّة)
+3. Être musulman
+4. Avoir toutes ses facultés mentales
+5. Être conscient
+6. Utiliser eau Pure (الْمَاء الطَّهُور)
+7. Retirer tout ce qui empêche l'eau d'atteindre la peau
 
 ---
 
-## سَبْع سُنَن:
-1. غَسْل الْمَوْضِع الْمُتَّسِخ أَوَّلاً
-2. إِتْمَام الْوُضُوء أَثْنَاء الْغُسْل
-3. صَبّ الْمَاء ثَلاث مَرَّات عَلَى كُلِّ عُضْو
-4. الْبِدَايَة بِالْجَانِب الْأَيْمَن
-5. عَدَم الْفَصْل (الاسْتِمْرَارِيَّة)
-6. تَدْلِيك جَمِيع الْأَعْضَاء
-7. غَسْل الْقَدَمَيْن فِي مَكَان آخَر
+## 1 SEULE OBLIGATION (الْفَرْض):
+### Mouiller **TOUT** le corps (تَعْمِيم الْمَاء)
+- Pas un cheveu qui reste sec
+- Chaque millimètre du corps
 
 ---
 
-## ملاحظة مهمة:
-**يَجُوز الصَّلاة بَعْد الْغُسْل بِدُون وُضُوء**
-- الْغُسْل يَشْمَل الْوُضُوء`
+## 7 SUNNAHS (السُّنَن) (Recommandé):
+1. Laver d'abord la partie souillée
+2. Faire les ablutions complètes pendant le ghusl
+3. Mouiller 3 fois chaque membre
+4. Commencer par la droite, finir par la gauche
+5. Ne pas faire de pauses
+6. Frotter tous les membres
+7. Laver les pieds dans un autre endroit
+
+---
+
+## NOTE IMPORTANTE:
+**On peut prier après le Ghusl SANS refaire l'ablution (الْوُضُوء)**
+- Le ghusl inclut les ablutions
+- Pas besoin de wudhu supplémentaire`
         }
     ]
 };

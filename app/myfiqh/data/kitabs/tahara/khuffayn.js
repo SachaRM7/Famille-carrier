@@ -1,52 +1,52 @@
-// Baab 6: الْمَسْح عَلَى الْخُفَّيْن (Masah sur Khuffayn)
+// Baab 6: Masah sur les chaussettes en cuir
 
 const TAHARA_BAAB_KHUFFAYN = {
     id: "tahara-khuffayn",
-    name: "الْمَسْح عَلَى الْخُفَّيْن",
-    description: "مَسْح الْجَوَارِب الْجِلْدِيَّة",
+    name: "Masah (الْمَسْح) sur Khuffayn (الْخُفَّيْن)",
+    description: "Passer les mains sur les chaussettes en cuir",
     notes: [
         {
             id: "note-8",
-            title: "الْمَسْح عَلَى الْخُفَّيْن",
+            title: "Masah sur les chaussettes en cuir (Khuffayn)",
             date: "2026-03-01",
             author: "Sacha",
-            tags: ["خفين", "جوارب", "مسح"],
-            content: `# الْمَسْح عَلَى الْخُفَّيْن
+            tags: ["khuffayn", "chaussettes", "masah"],
+            content: `# Masah (الْمَسْح) sur Khuffayn (الْخُفَّيْن)
 
-## ثَلاث شُرُوط:
-1. **لُبْسُهُمَا بَعْد طُهْر**
-   - ⚠️ لا يَجُوز إِذَا كَان بِتَيَمُّم ⚠️
+## 3 CONDITIONS pour faire Masah:
+1. **Porter immédiatement après ablutions complètes**
+   - ⚠️ PAS accepté si Tayammum (التَّيَمُّم) ⚠️
 
-2. **يَجِب أَن يَسْتُرَا**
-   - الْقَدَم كُلَّهَا
-   - إِلَى الْكَاحِلَيْن
+2. **Le Khuff doit couvrir**
+   - Toute la partie du pied
+   - Jusqu'aux chevilles
 
-3. **يَجِب أَن يَكُونَا طَاهِرَيْن**
-   - نَظِيفَيْن
-   - لَيْس مِن جِلْد كَلْب أَوْ خِنْزِير
-
----
-
-## ثَلاث مُبْطِلَات:
-
-1. **الْجَنَابَة** (وُجُوب الْغُسْل)
-   - خُرُوج الْمَنِيّ = غُسْل وَاجِب
-   - يُبْطِل الْمَسْح
-
-2. **انْقِضَاء الْمُدَّة**
-   - الْمُسَافِر = 3 أَيَّام وَ 3 لَيَال (72 سَاعَة)
-   - الْمُقِيم = يَوْم وَلَيْلَة (24 سَاعَة)
-
-3. **خَلْع الْخُفّ**
-   - ⚠️ وُجُوب إِعَادَة الْوُضُوء كَامِلاً ⚠️
+3. **Doit être pur**
+   - Pas sale
+   - Pas fabriqué en cuir de chien/porc
 
 ---
 
-## حِسَاب الْمُدَّة:
-- الْبِدَايَة: عِنْدَ أَوَّل نَاقِض بَعْد الْلُّبْس
-- مِثَال: وُضُوء الْفَجْر → لُبْس الْخُفّ → وُضُوء الظُّهْر → **بِدَايَة الْحِسَاب**
+## 3 ANNULATIONS du Masah (الْمُبْطِلَات):
 
-**مِهَمّ:** إِذَا حَدَثَتْ جَنَابَة قَبْل انْقِضَاء الْمُدَّة = غُسْل وَاجِب، الْمَسْح بَاطِل`
+1. **Si Djanaba (الْجَنَابَة)** (ce qui oblige le Ghusl)
+   - Perte de sperme = Ghusl (الْغُسْل) obligatoire
+   - Masah invalide
+
+2. **Si la durée s'écoule (الْمُدَّة)**
+   - Voyageur = 3 jours + 3 nuits (72h)
+   - Non-Voyageur = 1 jour + 1 nuit (24h)
+
+3. **Si tu retires ton Khuff**
+   - ⚠️ OBLIGÉ de refaire ablutions complètes ⚠️
+
+---
+
+## Décompte de la durée:
+- Début: dès le moment où on "perd" (annule) l'ablution
+- Exemple: Ablution Fajr → Port Khuff → Ablution Dhor → DÉBUT COMPTAGE
+
+**Important:** Si avant la fin de la durée on a une djanaba = Ghusl obligatoire, masah annulé`
         }
     ]
 };

@@ -1,36 +1,36 @@
-// Baab 4: السِّوَاك (Le brossage des dents)
+// Baab 4: Siwak - Le brossage des dents
 
 const TAHARA_BAAB_SIWAK = {
     id: "tahara-siwak",
-    name: "السِّوَاك (تَنْظِيف الْأَسْنَان)",
-    description: "الْأَدَاة وَالْأَوْقَات الْمُسْتَحَبَّة",
+    name: "Siwak (السِّوَاك) - Le brossage des dents",
+    description: "L'objet et les moments recommandés",
     notes: [
         {
             id: "note-6",
-            title: "السِّوَاك وَأَوْقَاتُهُ",
+            title: "Siwak et ses moments recommandés",
             date: "2026-03-01",
             author: "Sacha",
-            tags: ["سواك", "أسنان", "نظافة", "سنة"],
-            content: `# السِّوَاك
+            tags: ["siwak", "dents", "hygiène", "sunna"],
+            content: `# Siwak (السِّوَاك) - Le brossage des dents
 
-## التَّعْرِيف:
-- **السِّوَاك** = فِعْل التَّنْظِيف
-- **الْمِسْوَاك** = الأَدَاة (الْعِصَا)
+## Définition:
+- **Siwak (السِّوَاك)** = L'action du brossage
+- **Misswak (الْمِسْوَاك)** = L'objet utilisé (bâton)
 
-## الْأَوْقَات الْمُسْتَحَبَّة:
-1. **أَثْنَاء الْوُضُوء**
-2. **قَبْل الصَّلاة**
-3. **عِنْد الاسْتِيقَاظ**
-4. **لِقِرَاءَة الْقُرْآن**
-5. **عِنْد الدُّخُول إِلَى الْبَيْت**
-6. **عِنْدَ خُرُوج الرَّائِحَة الْكَرِيهَة**
+## Moments recommandés (مُسْتَحَبّ - Mustahhab):
+1. **Pendant l'ablution (الْوُضُوء)**
+2. **Avant la prière (الصَّلاة)**
+3. **Au réveil**
+4. **Pour lire le Coran (الْقُرْآن)**
+5. **En rentrant chez soi**
+6. **Quand une odeur sort de la bouche**
 
-## وَعْد النَّبِيّ:
-إِذَا حَافَظْتَ عَلَى هَذِهِ الْأَوْقَات = **لا تَتَسَوَّس الْأَسْنَان**
+## Promesse du Prophète:
+Si on applique ces conseils = **jamais de caries**
 
-## الْفَائِدَة:
-- نَظَافَة فَمِ وَأَسْنَان مِثَالِيَّة
-- سُنَّة مُؤَكَّدَة`
+## Impact:
+- Hygiène bucco-dentaire optimale
+- Sunnah (سُنَّة) fortement encouragée`
         }
     ]
 };

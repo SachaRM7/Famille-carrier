@@ -1,37 +1,37 @@
-// Baab 2: الآنِيَة (Les récipients)
+// Baab 2: Les récipients
 
 const TAHARA_BAAB_RECIPIENTS = {
     id: "tahara-recipients",
-    name: "الآنِيَة (الأَوعِيَة)",
-    description: "أَوْعِيَة مَحْظُورَة وَمُبَاحَة",
+    name: "Les récipients (الآنِيَة)",
+    description: "Récipients autorisés et interdits",
     notes: [
         {
             id: "note-3",
-            title: "الآنِيَة مِن الذَّهَب وَالْفِضَّة",
+            title: "Les récipients en or, argent et autres matériaux",
             date: "2026-03-01",
             author: "Sacha",
-            tags: ["آنية", "ذهب", "فضة", "حرام"],
-            content: `# الآنِيَة
+            tags: ["récipients", "or", "argent", "interdit"],
+            content: `# Les récipients (الآنِيَة)
 
-## الآنِيَة الْمَحْظُورَة
-الآنِيَة مِن الذَّهَب وَالْفِضَّة **حَرَام** اسْتِعْمَالُهَا.
+## Récipients interdits
+Les récipients en **or** et **argent** sont **interdits** d'utilisation.
 
-### السَّبَب:
-- الغُرُور وَالتَّرَف
-- الْبُعْد عَن التَّوَاضُع
+### Raison:
+- Orgueil, luxe, ostentation
+- Éloignement de la modestie
 
-## الآنِيَة الْمُبَاحَة
-- جَمِيع الْمَوَاد الْأُخْرَى
-- آنِيَة غَيْر الْمُسْلِمِين (مَبَاحَة إِلا إِذَا اسْتُعِمِلَت لِلنَّجَاسَة)
+## Récipients permis
+- Tous les autres matériaux
+- Récipients des non-musulmans (permis sauf si utilisés pour l'impur)
 
-## الْجُلُود الْمَدْبُوغَة
-### جُلُود الْحَيَوَانَات:
-- جَمِيع جُلُود الْحَيَوَانَات → **طَاهِرَة بَعْد الدِّبَاغَة**
-- إِلا: **الْكَلْب** وَالْخِنْزِير (تَبْقَى نَجِسَة)
+## Matériaux purs après tannage (الدِّبَاغَة)
+### Les peaux d'animaux:
+- Peau de tous les animaux → **pure après tannage**
+- Sauf: **chien** et **porc** (restent impurs même tannés)
 
-## الْعِظَام وَالْقُرُون وَالشُّعُور وَالرِّيش:
-- **طَاهِرَة** بَعْد الذَّبْح الشَّرْعِي
-- يَجُوز اسْتِعْمَالُهَا`
+## Os, cornes, poils, plumes:
+- **Pure** après l'abattage rituel
+- Peuvent être utilisés`
         }
     ]
 };

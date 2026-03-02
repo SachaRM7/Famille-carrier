@@ -1,55 +1,55 @@
-// Baab 9: إِزَالَة النَّجَاسَات (L'élimination des impuretés)
+// Baab 9: L'élimination des impuretés
 
 const TAHARA_BAAB_NAJASA = {
     id: "tahara-najasa",
-    name: "إِزَالَة النَّجَاسَات",
-    description: "كَيْفِيَّة تَطْهِير الْأَشْيَاء الْنَّجِسَة",
+    name: "L'élimination des impuretés (إِزَالَة النَّجَاسَات)",
+    description: "Comment nettoyer ce qui est souillé",
     notes: [
         {
             id: "note-11",
-            title: "إِزَالَة النَّجَاسَات",
+            title: "Élimination des impuretés (إِزَالَة النَّجَاسَات)",
             date: "2026-03-01",
             author: "Sacha",
-            tags: ["نجاسة", "تطهير", "ماء"],
-            content: `# إِزَالَة النَّجَاسَات
+            tags: ["najasa", "impureté", "nettoyage", "eau"],
+            content: `# L'élimination des impuretés (إِزَالَة النَّجَاسَات)
 
-## نُقْطَة مُهِمَّة:
-**النَّجَاسَة يَجِب أَن تَكُون ظَاهِرَة أَوْ لَهَا رَائِحَة**
-
----
-
-## قَوَاعِد التَّطْهِير:
-
-### 1. وَسَائِل التَّطْهِير:
-- الْمَاء (الْوَسِيلَة الْأَسَاسِيَّة)
-- التَّحَوُّل الْكِيمِيَائِيّ
-- وَسَائِل أُخْرَى مُنَاسِبَة
-
-### 2. عَدَد الْغَسْلات:
-- **لا عَدَد مُحَدَّد عُمُوماً**
-- **إِلا**: إِذَا لَحِس الْكَلْب الإِنَاء
-  - وُجُوب غَسْلُهُ **7 مَرَّات**
+## POINT IMPORTANT (en rouge):
+**L'impureté (النَّجَاسَة) doit être VISIBLE ET/OU ODORANTE**
 
 ---
 
-## حَالات خَاصَّة:
+## RÈGLES DE NETTOYAGE:
 
-### بَوْل الطِّفْل الذَّكَر غَيْر الْفَاطِم:
-- **فَقَط** رَشّ الْمَاء عَلَيْه
-- لا يُشْتَرَط الْفَرْك
+### 1. Moyens de nettoyage:
+- L'eau (الْمَاء) (principal moyen)
+- Transformation chimique
+- Autres moyens appropriés
 
-### بَوْل الطِّفْلَة غَيْر الْفَاطِمَة:
-- **غَسْل** بِالْمَاء
-- الْفَرْك ضَرُورِيّ
-
-**ملاحظة**: الطِّفْل = مَن يَشْرَب اللَّبَن فَقَط (بِدُون طَعَام صِلْب)
+### 2. Nombre de lavages:
+- **AUCUN nombre exigé en général**
+- **SAUF**: Si chien bave dans un récipient
+  - Laver **7 fois** obligatoire
 
 ---
 
-## تَدَرُّج النَّجَاسَة:
-1. نَجَاسَة ظَاهِرَة = تَطْهِير ضَرُورِيّ
-2. نَجَاسَة غَيْر مَرْئِيَّة = خِلاف بَيْن الْعُلَمَاء
-3. تَحَوُّل النَّجَاسَة = تَصِير طَاهِرَة`
+## CAS PARTICULIERS:
+
+### Urine de bébé garçon non-sevré:
+- **JUSTE** jeter de l'eau dessus
+- Pas nécessaire de frotter
+
+### Urine de bébé fille non-sevrée:
+- **LAVER** à l'eau complètement
+- Frotter nécessaire
+
+**Note**: "Bébé" = ne boit que du lait/eau (pas d'aliments solides)
+
+---
+
+## HIÉRARCHIE DES IMPURETÉS:
+1. Impureté visible/odorante = à nettoyer
+2. Impureté sans signe = débat entre écoles
+3. Transformation de l'impureté = elle devient pure`
         }
     ]
 };

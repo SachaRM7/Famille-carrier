@@ -1,60 +1,60 @@
-// Baab 5: الْوُضُوء (L'ablution)
+// Baab 5: L'ablution
 
 const TAHARA_BAAB_WUDHU = {
     id: "tahara-wudhu",
-    name: "الْوُضُوء",
-    description: "الشُّرُوط وَالْفَرَائِض وَالسُّنَن",
+    name: "L'ablution (الْوُضُوء)",
+    description: "Conditions, obligations et sunnahs du wudhu",
     notes: [
         {
             id: "note-7",
-            title: "الْوُضُوء: الشُّرُوط وَالْفَرَائِض وَالسُّنَن",
+            title: "Al-Wudhu: Conditions, Farads et Sunan",
             date: "2026-03-01",
             author: "Sacha",
-            tags: ["وضوء", "شرط", "فرض", "سنة"],
-            content: `# الْوُضُوء
+            tags: ["wudhu", "ablutions", "fard", "condition"],
+            content: `# L'ablution (الْوُضُوء)
 
-## الْمُصْطَلَحَات الشَّرْعِيَّة:
+## Terminologie Juridique:
 
-### الشَّرْط:
-- ثَوَاب إِذَا فَعَلْتَ
-- لا إِثْم إِذَا لَم تَسْتَطِع
+### Shart (الشَّرْط) - Condition:
+- Récompense si tu fais ✓
+- Pas de péché si condition naturelle
 
-### الْفَرْض:
-- إِثْم إِذَا تَرَكْتَ
+### Fard (الْفَرْض) - Obligation:
+- Péché si tu ne fais pas ✗
 
-### الْوَاجِب:
-- عِنْدَ قِلَّة الدَّلِيل
+### Wajib (الْوَاجِب) - Obligatoire:
+- Quand il y a peu de dalil (preuve)
 
-### الْمُسْتَحَبّ:
-- فِعْل حَسَن لا إِثْم إِذَا تَرَكْتَ
+### Mustahab (الْمُسْتَحَبّ) - Recommandé:
+- Tu fais bien, pas de péché si tu ne fais pas
 
-### الْمُبَاح:
-- ثَوَاب بِالنِّيَّة الصَّالِحَة
+### Mubah (الْمُبَاح) - Permis:
+- Récompense si bonne intention = habitude
 
-### الْحَرَام
-### الْمَكْرُوه
-
----
-
-## فَرَائِض الْوُضُوء:
-1. الْمَضْمَضَة وَالاسْتِنْشَاق
-2. الْمَسْح عَلَى الرَّأْس
-3. الْمَسْح عَلَى الأُذُنَيْن
-4. غَسْل الْيَدَيْن وَالرِّجْلَيْن إِلَى الْمِرْفَقَيْن
-5. **الْمُحَافَظَة عَلَى التَّرْتِيب**
-6. **عَدَم الْفِصْل (عَدَم الْفَتْرَة الطَّويِلَة)**
+### Haram (الْحَرَام) - Interdit
+### Makrouh (الْمَكْرُوه) - Détesté
 
 ---
 
-## شُرُوط الْوُضُوء:
-1. التَّخَلُّص مِمَّا يَنْقُضُ الْوُضُوء
-2. الْإِسْلام
-3. النِّيَّة (الْمَالِكِيَّة تَقُول إِنَّهَا تُشْتَرَط)
-4. الْعَقْل
-5. التَّمْيِيز
-6. مَاء طَهُور
-7. إِزَالَة مَا يَمْنَع وُصُول الْمَاء
-   - الْخَوَاتِيم، طَلاء الأَظْفَار، الْجِبْس، إِلَخ`
+## Les FARD (الْفَرَائِض) du Wudhu:
+1. Rincer la bouche et aspirer avec le nez
+2. Passer sur les cheveux
+3. Faire masah (الْمَسْح) sur les oreilles
+4. Laver les mains puis les pieds jusqu'au coude
+5. **Suivre l'ordre (الْتَّرْتِيب - Tartib)** - IMPORTANT
+6. **Ne pas faire de pause** - c'est Fard
+
+---
+
+## Les SHART (الشُّرُوط) du Wudhu:
+1. Se débarrasser de ce qui annule l'ablution
+2. Être musulman
+3. Avoir l'intention (النِّيَّة - Niyyah) - Malik dit que c'est automatique
+4. Être conscient (positif)
+5. Avoir toutes ses facultés mentales
+6. Eau pure et purifiante (الْمَاء الطَّهُور)
+7. Retirer tout ce qui empêche l'eau d'atteindre la peau
+   - Bagues, vernis, plâtre, etc.`
         }
     ]
 };

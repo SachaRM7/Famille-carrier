@@ -1,54 +1,51 @@
-// Baab 10: التَّيَمُّم (Tayammum - Ablution sèche)
+// Baab 10: Tayammum - Ablution sèche
 
 const TAHARA_BAAB_TAYAMMUM = {
     id: "tahara-tayammum",
-    name: "التَّيَمُّم",
-    description: "الْغُسْل بِالتُّرَاب عِنْدَ عَدَم الْمَاء",
+    name: "Tayammum (التَّيَمُّم) - Ablution sèche",
+    description: "Quand on n'a pas d'eau",
     notes: [
         {
             id: "note-9",
-            title: "التَّيَمُّم: شُرُوطُهُ وَنَوَاقِضُهُ",
+            title: "Tayammum: Conditions et annulations",
             date: "2026-03-01",
             author: "Sacha",
-            tags: ["تيمم", "تراب", "بدل الماء"],
-            content: `# التَّيَمُّم
+            tags: ["tayammum", "ablution", "sèche", "pas-eau"],
+            content: `# Tayammum (التَّيَمُّم) - Ablution sèche
 
-## مَتَى يُمَارَس التَّيَمُّم:
-- عَدَم الْمَاء تَمَاماً
-- وُجُود الْمَاء لَكِن لا يَسْتَطِيع اسْتِعْمَالَهُ (مَرَض، جُرْح)
-
----
-
-## سَبْع شُرُوط:
-
-1. النِّيَّة
-2. الْإِسْلام
-3. الْعَقْل الْكَامِل
-4. التَّمْيِيز
-5. عَدَم الْمَاء أَوْ عَدَم الاسْتِطَاعَة
-6. طُهْر التُّرَاب (إِن كَان مَرِيضاً)
-7. عَدَم الْمَاء الْمَالِح أَوْ الرَّاكِد
+## Quand on pratique Tayammum:
+- Pas d'eau disponible
+- Eau existe mais on ne peut pas l'utiliser (blessure, maladie)
 
 ---
 
-## ثَلاث فَرَائِض:
-
-1. مَسْح الْوَجْه بِالتُّرَاب الطَّاهِر
-2. مَسْح الْيَدَيْن إِلَى الْمِرْفَقَيْن
-3. عَدَم الْفَتْرَة بَيْن الْمَسْحَتَيْن
+## 7 CONDITIONS pour faire Tayammum:
+1. Mettre l'intention (النِّيَّة)
+2. Être musulman
+3. Avoir toutes ses facultés mentales
+4. Avoir le discernement
+5. Tu n'as pas d'eau ou ne peut pas l'utiliser
+6. Le sol soit pur (إِن كَان نَظِيفاً)
+7. Pas d'eau salée ou stagnante
 
 ---
 
-## ثَلاث مُبْطِلَات:
+## 3 OBLIGATIONS (الْفَرَائِض):
+1. Frotter le visage avec le sol pur
+2. Frotter les mains jusqu'aux poignets
+3. Sans pause (الْتَّرْتِيب)
 
-1. **أَيّ شَيْء يُبْطِل الْوُضُوء**
-   - الْبَرَاز، الْبَوْل، الرِّيح
+---
 
-2. **وِجْدَان الْمَاء**
-   - ظُهُور الْمَاء = بُطْلان التَّيَمُّم
+## 3 choses qui ANNULENT le Tayammum:
+1. **Tout ce qui annule l'ablution (الْوُضُوء)**
+   - Selles, urine, gaz
 
-3. **زَوَال سَبَب التَّيَمُّم**
-   - الشِّفَاء مِن الْمَرَض = بُطْلان التَّيَمُّم`
+2. **Tu trouves de l'eau (الْمَاء)**
+   - L'eau apparaît = tayammum invalide
+
+3. **Tu n'es plus malade/blessé**
+   - La condition disparaît = tayammum annulé`
         }
     ]
 };

@@ -1,75 +1,76 @@
-// Baab 11: الْحَيْض (Les menstrues)
+// Baab 11: Les menstrues
 
 const TAHARA_BAAB_HAYD = {
     id: "tahara-hayd",
-    name: "الْحَيْض",
-    description: "أَحْكَام الْحَيْض وَالنِّفَاس",
+    name: "Les menstrues (الْحَيْض)",
+    description: "Règles de vie pendant les menstrues et lochies",
     notes: [
         {
             id: "note-12",
-            title: "الْحَيْض: أَنْوَاعُهُ وَأَحْكَامُهُ",
+            title: "Al-Hayd: Types, interdits et permissions",
             date: "2026-03-01",
             author: "Sacha",
-            tags: ["حيض", "نفاس", "نساء"],
-            content: `# الْحَيْض
+            tags: ["hayd", "menstrues", "femme", "haram"],
+            content: `# Les menstrues (الْحَيْض)
 
-## ثَلاث أَنْوَاع مِن الدِّمَاء:
+## 3 TYPES DE SAIGNEMENT:
 
-### 1. الْحَيْض (الْحَيْضَة):
-- أَقْصَى مُدَّة: **15 يَوماً**
-- دَم طَبِيعِيّ لِلنِّسَاء
+### 1. Les menstrues (الْحَيْض - Al-Hayd):
+- Durée maximale: **15 jours**
+- Saignement normal de la femme
 
-### 2. النِّفَاس:
-- بَعْد الْوِلاَدَة
-- أَقْصَى مُدَّة: **40 يَوماً** (أَوْ 60 عِنْد آخَرِين)
+### 2. Les lochies (النِّفَاس - An-Nifas):
+- Après l'accouchement
+- Durée max: **40 jours** (ou 60 selon autres avis)
 
-### 3. الاسْتِحَاضَة:
-- مِن الْيَوْم الـ 16 فَمَا فَوْق
-- دَم غَيْر مُنْتَظِم
-
----
-
-## سَبْع مَحْظُورَات أَثْنَاء الْحَيْض:
-
-1. ❌ الْجِمَاع
-2. ❌ الطَّلاق
-3. ❌ الصَّلاة
-4. ❌ الصِّيَام
-5. ❌ الطَّوَاف (حَوْل الْبَيْت)
-6. ❌ دُخُول الْمَسْجِد
-7. ❌ **مَسّ الْمُصْحَف** ⚠️
+### 3. Le sang anormal (الاسْتِحَاضَة - Istihadah):
+- À partir du **16ème jour**
+- Saignement continu ou irrégulier
 
 ---
 
-## ثَلاث إِبَاحَات بَعْد انْقِطَاع الدَّم وَقَبْل الْغُسْل:
+## 7 INTERDITS (الْمَحْظُورَات) pendant menstrues/lochies:
 
-1. ✅ الصِّيَام
-2. ✅ دُخُول الْمَسْجِد
-   - ⚠️ لَكِن بِوُضُوء وَاجِب ⚠️
-3. ✅ قِرَاءَة الْقُرْآن (بِدُون مَسّ)
+1. ❌ Avoir des rapports conjugaux (الْجِمَاع)
+2. ❌ Se faire répudier (الطَّلاق)
+3. ❌ Faire la prière (الصَّلاة)
+4. ❌ Jeûner (الصِّيَام)
+5. ❌ Faire Tawaf (الطَّوَاف) - autour de la Kaaba
+6. ❌ Rester dans la mosquée (الْمَسْجِد)
+7. ❌ **Toucher le Coran (الْمُصْحَف)** ⚠️
 
 ---
 
-## حَالات خَاصَّة:
+## 3 PERMISSIONS après fin saignement, avant purification majeure:
 
-### الْمُعْتَادَة:
-- إِذَا كَانَت عَادَتُهَا 5 أَوْ 6 أَيَّام
-- فَإِنَّهَا مِن الْيَوْم السَّابِع تَرْجِع لِلطَّاهِرِ
-- تَتَطَهَّر وَتُصَلِّي
+1. ✅ Jeûner (الصِّيَام)
+2. ✅ Rester dans la mosquée (الْمَسْجِد)
+   - ⚠️ MAIS avec ablution (الْوُضُوء) obligatoire ⚠️
+3. ✅ Lire le Coran (الْقُرْآن) (sans le toucher)
 
-### الْمُمَيِّزَة:
-- تَسْتَطِيع الْفَرْق بَيْن دَم الْحَيْض وَدَم الاسْتِحَاضَة
-- تَرْجِع عِنْد التَّمْيِيز
+---
 
-### الْمُتَحَيِّرَة:
-لا تَعْرِف أَيَّام حَيْضِهَا
+## CAS PARTICULIERS:
 
-#### الْمُبْتَدِئَة:
-- تَسِير عَلَى عَادَة نِسَاء عَائِلَتِهَا
+### Al-Mu'tadah (الْمُعْتَادَة) - "L'habituée":
+- Si habituellement 6-5 jours de règles
+- Mais un jour ça change: dès le 7ème jour elle peut faire ses actes
+- Son cas = **Mu'tadah** (habitude)
 
-#### الناسِيَة:
-- نَسِيَت أَيَّام عَادَتِهَا
-- تَعْمَل بِرَأْي أَهْل الْعِلْم`
+### At-Tamyiz (التَّمْيِيز) - "La distinction":
+- Si elle distingue le sang des règles du sang anormal
+- Elle se rattache à ses actes dès qu'elle a distingué
+- Cas = **Tamyiz** (discernement)
+
+### Al-Mutahayyirah (الْمُتَحَيِّرَة) - "La confuse":
+Elle ne connaît ni jours fixes, ni état du sang
+
+#### **Al-Mubtadi'ah** (الْمُبْتَدِئَة) - Cas 1:
+- Compte selon la durée générale des femmes de sa famille
+
+#### **Nassiyah** (النَّاسِيَة) - Cas 2:
+- Celle qui a oublié ses jours réguliers
+- Suit l'avis de l'école juridique`
         }
     ]
 };
