@@ -53,36 +53,6 @@ L'eau mélangée à une impureté.
                     ]
                 },
                 {
-                    id: "tahara-musta-mala",
-                    name: "L'eau utilisée (Musta'mala)",
-                    description: "L'eau qui a servi aux ablutions",
-                    notes: [
-                        {
-                            id: "note-2",
-                            title: "L'eau utilisée et ses statuts",
-                            date: "2026-03-01",
-                            author: "Sacha",
-                            tags: ["eau", "purification", "ablutions", "musta'mala"],
-                            content: `# L'eau utilisée (Musta'mala)
-
-## Définition
-L'eau qui a déjà servi pour les ablutions ou le lavage rituel.
-
-## Statut de Musta'mala
-- Devient **tahir** (pure) mais pas **tahour** (purifiante)
-- Ne peut pas être utilisée pour se purifier à nouveau
-
-## Utilisations possibles:
-- Nettoyer les vêtements
-- Nettoyer la maison
-- Usages domestiques
-
-## Note importante
-Même si l'eau a été "utilisée", elle reste propre pour des usages non rituels.`
-                        }
-                    ]
-                },
-                {
                     id: "tahara-recipients",
                     name: "Les récipients",
                     description: "Récipients autorisés et interdits",
@@ -148,40 +118,6 @@ Les récipients en **or** et **argent** sont **interdits** d'utilisation.
 2. Entrer du pied gauche
 3. Sortir du pied droit
 4. Dire "Ghoufranak" (pardon) à Allah`
-                        }
-                    ]
-                },
-                {
-                    id: "tahara-fitra",
-                    name: "Al-Fitra - La nature saine",
-                    description: "Hygiène et sunnah naturelle",
-                    notes: [
-                        {
-                            id: "note-5",
-                            title: "Al-Fitra - Les 5 éléments de la Sunna",
-                            date: "2026-03-01",
-                            author: "Sacha",
-                            tags: ["fitra", "hygiène", "sunna", "circoncision"],
-                            content: `# Al-Fitra (La nature saine de l'homme)
-
-## Les 5 éléments de la Sunna (Sunnah):
-
-### 1. La circoncision
-- Entre 7 jours et 80 ans
-- Acte de Sunna fortement recommandé
-
-### 2. Raser les poils pubiens
-### 3. Épiler les aisselles
-### 4. Couper les moustaches (tailler)
-### 5. Laisser pousser la barbe
-
-## RÈGLE IMPORTANTE:
-Ne pas dépasser **40 jours** au maximum pour ces actes.
-
-## Interdictions alimentaires:
-Tous les animaux qui tuent avec leurs **ongles (griffes)** sont interdits à la consommation.
-
-**Exemples:** Lion, tigre, chat sauvage, etc.`
                         }
                     ]
                 },
@@ -373,6 +309,37 @@ Si on applique ces conseils = **jamais de caries**
 
 3. **Tu n'es plus malade/blessé**
    - La condition disparaît = tayammum annulé`
+                        }
+                    ]
+                },
+                {
+                    id: "tahara-annulation",
+                    name: "Ce qui annule l'ablution",
+                    description: "Les choses qui invalident le wudhu",
+                    notes: [
+                        {
+                            id: "note-ce-qui-annule",
+                            title: "Ce qui annule l'ablution (Nawaqid Al-Wudhu)",
+                            date: "2026-03-01",
+                            author: "Sacha",
+                            tags: ["ablution", "annulation", "wudhu"],
+                            content: `# Ce qui annule l'ablution (Nawaqid Al-Wudhu)
+
+## Choses qui annulent le Wudhu:
+1. Selles (urine, selles)
+2. Gaz (pet)
+3. Écoulement du sang en grande quantité
+4. Perte de conscience
+5. Sommeil profond
+6. Folie temporaire
+7. Relations conjugales (pénétration)
+8. Consommation d'aliments contenant une substance stupéfiante
+
+## Après annulation:
+- Impossible de faire la Salat
+- Impossible de faire Tawaf
+- Impossible de toucher le Mushaf
+- Nécessité de refaire les ablutions complètes`
                         }
                     ]
                 },
