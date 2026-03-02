@@ -1,6 +1,31 @@
 // MyFiqh - Data Loader
 // Combine tous les kitabs en une seule base de données
 
+/**
+ * Architecture actuelle:
+ * - data/kitabs/tahara.js (contient 11 baabs)
+ * - data/index.js (ce fichier - loader)
+ * 
+ * Architecture future (progressive):
+ * - data/kitabs/tahara/
+ *   ├── index.js (loader tahara)
+ *   └── baabs/
+ *       ├── eau.js
+ *       ├── recipients.js
+ *       ├── besoins.js
+ *       ├── siwak.js
+ *       ├── wudhu.js
+ *       ├── khuffayn.js
+ *       ├── annulation.js
+ *       ├── ghusl.js
+ *       ├── najasa.js
+ *       ├── tayammum.js
+ *       └── hayd.js
+ * 
+ * Chaque baab dans son propre fichier = 
+ * Facilité de modification + Modularité maximale
+ */
+
 const fiqhDatabase = {
     kitabs: []
 };
